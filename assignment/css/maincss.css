@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+}
+.bgimage {
+    background-image:url(../assets/hero-bg.jpg);
+    margin: 0;
+    padding: 100px;
+    opacity: .7;
+    
+}
+
+nav ul {
+    background-color: #fff;
+    display: flex;
+    margin: 0px -10px;
+    text-decoration: none;
+}
+
+nav li {
+    color: gray;
+    font-weight: lighter;
+    list-style: none;
+    margin: 5px 20px;
+    text-decoration: none;
+    
+}
+
+.push-left {
+    color: gray;
+    margin-right: auto;   
+}
+
+.primarybutton {
+    background-color: #00f;
+    border:0;
+    border-radius:10px;
+    display: inline-block;
+    font-family: 'SegoeUI SemiBold';
+    font-size: 16px;
+    color: #fff;
+    min-width: 110px;
+    margin-right: 10px;
+    padding: 8px 20px; 
+    text-align: center;
+
+}
+
+/*number of projects*/
+.flex-container {
+    background-color: honeydew;
+    display:flex;
+    font-size: xx-large;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.flex-container1 {
+    background-color: honeydew;
+    display:flex;
+    flex-flow:nowrap;
+}
+
+/*
+.navbar {
+    background-color: burlywood;
+    color:cornsilk;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+*/
+
+.bgblue {
+    background-color: #00f;
+    padding: 30px;
+    color: #fff;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teams-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+
+    display: flex;
+}
+
+.teams-image img {
+    max-width: 100%;
+}
+
+.teams-info {
+    margin-top: auto;
+}
+
+@media (max-width:920px){
+
+    .teams-card{
+        flex: 1 21%;
+    }
+}
