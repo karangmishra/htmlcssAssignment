@@ -1,12 +1,15 @@
+
 body {
     text-align: center;
 }
+img {
+    padding: 10px;
+}
+
 .bgimage {
     background-image:url(../assets/hero-bg.jpg);
     margin: 0;
     padding: 100px;
-    opacity: .7;
-    
 }
 
 nav ul {
@@ -20,47 +23,80 @@ nav li {
     color: gray;
     font-weight: lighter;
     list-style: none;
-    margin: 5px 20px;
+    margin: 5px 10px;
     text-decoration: none;
     
 }
 
 .push-left {
-    color: gray;
-    margin-right: auto;   
+    color: gray; 
+    margin: auto;
 }
 
 .primarybutton {
     background-color: #00f;
     border:0;
     border-radius:10px;
+    color: #fff;
     display: inline-block;
     font-family: 'SegoeUI SemiBold';
     font-size: 16px;
-    color: #fff;
-    min-width: 110px;
     margin-right: 10px;
-    padding: 8px 20px; 
+    min-width: 110px;
+    padding: 6px 10px; 
     text-align: center;
+}
 
+/*  */
+.flex-container4 {
+align-content: flex-end;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-top: 100px;
+}
+
+.flex-container4 > div {
+background-color: #fff;
+font-size: 20px;
+height: 200px;
+text-align: center;
+width: 175px;
 }
 
 /*number of projects*/
 .flex-container {
     background-color: honeydew;
     display:flex;
+    flex-flow: wrap;
     font-size: xx-large;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 50px;
     font-weight: bold;
+    justify-content: space-around;
 }
 
 .flex-container1 {
     background-color: honeydew;
     display:flex;
-    flex-flow:nowrap;
+    flex-flow:wrap;   
 }
+
+/* client logo*/
+.flex-container2 {
+    background-color: honeydew;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-container2 > img {
+    font-size: 30px;
+    line-height: 50px;
+    margin: 10px;
+    text-align: center;
+    width: 100px;
+}
+/*for services*/
+
 
 /*
 .navbar {
@@ -74,32 +110,36 @@ nav li {
 }
 */
 
+/*action*/
 .bgblue {
-    background-color: #00f;
-    padding: 30px;
+    background-color: darkcyan;
     color: #fff;
+    padding: 30px;
 }
-
+ 
 .teams {
+    border: #fff;
+    border-width: 10px;   
     display: flex;
     flex-wrap: wrap;
-}
+ }
 
 .teams-card {
-    padding: 2%;
+    display: flex;
     flex-grow: 1;
     flex-basis: 16%;
-
-    display: flex;
+    margin: 5px 10px;
+    padding: 5%;     
 }
 
 .teams-image img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .teams-info {
-    margin-top: auto;
+    background-color: #fff;  
 }
+
 
 @media (max-width:920px){
 
