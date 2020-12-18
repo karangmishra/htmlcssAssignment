@@ -9,7 +9,7 @@ img {
 .bgimage {
     background-image:url(../assets/hero-bg.jpg);
     margin: 0;
-    padding: 100px;
+    padding: 1px;
 }
 
 nav ul {
