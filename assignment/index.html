@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/maincss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./js/mainjs.js"></script>
     <title>OnePage</title>
 </head>
-
 <body>
     <!--navigation bar-->
     <div>
@@ -26,7 +23,7 @@
                     <i class="fa fa-caret-down"></i>
                 <li>Contact</li>
                 <button class="primarybutton">Get Started</button>
-            </<ul>    
+            </<ul>
         </nav>
     </div>
     <div class="bgimage">
@@ -54,14 +51,23 @@
             </div>
         </div>
     </div>
-    
     <!--about us-->
-    <div>
+    <section>
         <h2>ABOUT US</h2>
         <div>
             <p>Mangnam dolores commodi susscript. Necessitatibus elus consectetur ex aliquid fuga enum quidem.</p>
         </div>
-
+        <div class="row">
+            <div class="column">
+                <p>Some text...</p>
+            </div>
+            <div class="column">
+                <p>Some text...</p>
+                <button class="action-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <div>
         <div class="flex-container">
             <p>65<br>Happy Clients</p>
             <p>85<br>Projects</p>
@@ -70,10 +76,20 @@
         </div>
     </div>
     <hr>
-    <div class="teams-card">
-        <div>
-            <img src="./assets/about-video.jpg" alt="video play">
+    <!--divide and make 2 column for text -->
+    <section>
+        <div class="row">
+            <div class="column">
+                <div>
+                    <img src="./assets/about-video.jpg" alt="video play">
+                </div>
+            </div>
+            <div class="column">
+                <p>Some text...</p>
+            </div>
         </div>
+    </section>
+    <div class="teams-card">
     </div>
     <hr>
     <hr>
@@ -86,9 +102,6 @@
         <img src="./assets/client-5.png" alt="client-5">
         <img src="./assets/client-6.png" alt="client-6">
     </div>
-    <hr>
-
-
     <!--testimonials-->
     <!--
     <div>
@@ -108,39 +121,32 @@
             commodi quidem hic quas.
         </p>
         <div class="flex-container4">
-           
-                <div>
-                    <h5>Lorem Ipsum</h5>
-                    <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
-                </div>
-                <div>
-                    <h5>Lorem Ipsum</h5>
-                    <p>Now is it avaliable. you have to purchase it.</p>
-                </div>
-                <div>
-                    <h5>Lorem Ipsum</h5>
-                    <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
-                </div>
-            
-              
-                <div>
-                    <h5>Lorem Ipsum</h5>
-                    <p>Now is it avaliable. you have to purchase it.</p>
-                </div>
-                <div>
-                    <h5>Lorem Ipsum</h5>
-                    <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
-                </div>
-                <div>
-                    <h5>Lorem Ipsum</h5>
-                    <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
-                </div>
-             
-         </div>
-       
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p>Now is it avaliable. you have to purchase it.</p>
+            </div>
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p>Now is it avaliable. you have to purchase it.</p>
+            </div>
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+        </div>
         <!--6 part of services-->
-        
-
     </div>
     <hr>
     <div class="bgcyan">
@@ -148,9 +154,8 @@
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paritur.
             Excepteur sint occaecat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <button class="primarybutton">Call To Action</button>
+        <button class="action-btn">Call To Action</button>
     </div>
-
     <hr>
     <!--
     <div>
@@ -167,9 +172,9 @@
             <li>WEB</li>
         </ul>  
     -->
-        <!--portfolio image grid-->
-     
-       <!-- 
+    <!--portfolio image grid-->
+
+    <!-- 
     <div class="row">
         <div class="column">
             <img src="./assets/portfolio-1.jpg" alt="portfolio-1.jpg">
@@ -190,8 +195,6 @@
     <div>
         <button class="primarybutton">Submit</button>
     </div>
-
-
     <!--Team members-->
     <section class="flex-container1">
         <div>
@@ -202,10 +205,10 @@
                 Et nemo qui impedit suscipit alias ea. Qula fuglat sit in iste officlis commodi quidem hic quas.
             </p>
 
-<!--team information-->
+            <!--team information-->
 
             <div class="teams-card">
-                <div class="teams-info"> 
+                <div class="teams-info">
                     <div class="teams-image">
                         <img src="./assets/team-1.jpg" alt="team-1">
                     </div>
@@ -242,11 +245,10 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-
     </section>
-<!--pricing section-->
+
+    <!--pricing section-->
     <section class="">
         <div>
             <h2>PRICING</h2>
@@ -260,17 +262,15 @@
                 <p>Now is it avaliable. you have to purchase it.</p>
                 <p><s>Pheretra massa</s></p>
                 <p><s>massa ultrasic</s></p>
-                <button class="buy-btn">Buy Now</button>
-              
-               
+                <button class="action-btn">Buy Now</button>
             </div>
-            <div id ="bgbusiness">
+            <div id="bgbusiness">
                 <h5>BUSSINESS</h5>
                 <p><sup>$</sup><big>19</big>/month</p>
                 <p>Now is it avaliable. you have to purchase it.</p>
                 <p>Pheretra massa</p>
                 <p><s>massa ultrasic</s></p>
-                <button class="buy-btn">Buy Now</button>
+                <button class="action-btn">Buy Now</button>
             </div>
             <div>
                 <h5>DEVLOPER</h5>
@@ -278,63 +278,75 @@
                 <p>Now is it avaliable. you have to purchase it.</p>
                 <p>Pheretra massa</p>
                 <p>massa ultrasic</p>
-                <button class="buy-btn">Buy Now</button>
+                <button class="action-btn">Buy Now</button>
             </div>
-           
         </div>
     </section>
-<section>
+
+    <!--footer-->
     <footer>
-        <div>
-            <div>
-                <div>
-                    <p><big>OnePage</big></p>
-                    <p>A108 Adam Street<br>
-                        New York NY 535022<br>
-                        United States
-                    </p>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <div>
+                        <p><big>OnePage</big></p>
+                        <p>A108 Adam Street<br>
+                            New York NY 535022<br>
+                            United States
+                        </p>
+                    </div>
+                    <div>
+                        Phone: +155895548855 <br>
+                        Email: info@example.com
+                    </div>
                 </div>
-                <div>
-                    Phone: +155895548855
-                    Email: info@example.com
-                </div>   
+                <div class="column">
+                    <big>Useful Links</big>
+                    <ul>
+                        <li>> Home
+                        <li>> About us
+                        <li>> Services
+                        <li>> Terms of services
+                        <li>> Privacy policy
+                    </<ul>
+                </div>
+                <div class="column">
+                    <big>Our Services</big>
+                    <ul>
+                        <li>> Web Design
+                        <li>> Web Devlopment
+                        <li>> Product Management
+                        <li>> Marketing
+                        <li>> Graphic Design</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <big>Join Our Newsletter</big>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam magna</p>
+                    <div>
+                        <form action="">
+                            <input type="text">
+                            <button class="action-btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <div>
-                <big>Useful Links</big>
-                <ul>
-                <li>>Home
-                <li>>About us<br>
-                <li>>Services<br>
-                <li>>Terms of services<br>
-                <li>>Privacy policy
-                </<ul>
+            <div class="row">
+                <div class="column">
+                    <p>© Copyright OnePage. All Rights Reserved </p>
+                </div>
+                <!--social media link-->
+                <div class="column">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
             </div>
-
-            <div>
-                <big>Our Services</big>
-                <ul>
-                    <li>>Web Design<br>
-                   <li>>Web Devlopment<br>
-                   <li>>Product Management<br>
-                   >Marketing<br>
-                   >Graphic Design
-                </p>
-            </div>
-
-            <div></div>
-            <div></div>
-            <div></div>
-
-        </div>
-        
-        <p>© Copyright OnePage. All Rights Reserved </p>
-        
-        <button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
-    
+            <button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+        </section>
+        <script src="./js/mainjs.js"></script>
     </footer>
-
-</section>
 </body>
-
 </html>
