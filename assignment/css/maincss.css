@@ -18,6 +18,11 @@ img {
     padding: 1px;
 }
 
+
+li {
+    list-style: none;
+}
+ 
 nav ul {
     background-color: #fff;
     display: flex;
@@ -53,6 +58,9 @@ nav li {
     text-align: center;
 }
 
+button:hover {
+    background-color: #55acee;
+}
 /*  */
 .flex-container4 {
 align-content: flex-end;
@@ -70,7 +78,6 @@ text-align: center;
 width: 175px;
 }
 
-
 /*about us 2 column separation*/
 .row {
     display: flex;
@@ -82,8 +89,10 @@ width: 175px;
     text-align: justify; 
 }
 
-li {
-    list-style: none;
+#video-play {
+    height: 360px;
+    padding-left: 10%;
+    width: 600px;
 }
 
 /*number of projects*/
@@ -121,7 +130,6 @@ li {
 }
 /*for services*/
 
-
 /*
 .navbar {
     background-color: burlywood;
@@ -130,9 +138,14 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+    list-style: none;  
 }
 */
+
+
+.bg-honeydew{
+    background-color: honeydew;
+}
 
 /*action*/
 .bgcyan {
@@ -219,10 +232,11 @@ li {
 
 /*contact us*/
 
- #google-img {
+#google-img {
      height: 160px;
      width: 100%;
  }
+
 input,
 text {
     width: 45%;
@@ -234,45 +248,46 @@ text {
 }
 
 /*action buttons*/
-      .action-btn {
-        background-color:white;
-        border-width: 2px;
-        border-color: #00f;
-        color: #00f;      
-        padding: 10px 20px;
-     }
+.action-btn {
+    background-color:white;
+    border-width: 2px;
+    border-color: #00f;
+    color: #00f;
+    padding: 10px 20px;
+}    
+     
 
-/*arrow sign*/
-    .arrow {
-        align-content: center;
-        border: solid blue;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 2px;
-        margin: 3px;
-       
-     }
+/*arrow sign*/ 
+.arrow {
+    align-content: center;
+    border: solid blue;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    margin: 3px;       
+}
 
-    .right {
-         transform: rotate(-45deg);
-         -webkit-transform: rotate(-45deg);
-     }
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}    
 
-
-    .down {
-         transform: rotate(45deg);
-         -webkit-transform: rotate(45deg);
-     }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
 /*social media footer*/
-    .social {
-        background: #55acee;
-        border-radius: 5px;
-        color: white;
-        font-size: 20px;
-        margin: 5px 2px;
-        padding: 4px 8px;
-        text-align: center;
-        text-decoration: none;
-       }
+.social {
+    background: #55acee;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin: 5px 2px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*portpolio*/
     
