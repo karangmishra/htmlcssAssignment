@@ -1,6 +1,7 @@
 
 body {
     background-color:whitesmoke;
+    font-family: Arial,sans-serif;
     text-align: center;
 }
 
@@ -17,7 +18,6 @@ img {
     margin: 0;
     padding: 1px;
 }
-
 
 li {
     list-style: none;
@@ -81,6 +81,7 @@ width: 175px;
 /*about us 2 column separation*/
 .row {
     display: flex;
+    padding-bottom:30px;
 }
 
 .column {
@@ -228,6 +229,7 @@ width: 175px;
 
     .flex-container5 :hover {
     background-color: darkcyan;
+    color: white;
     }
 
 /*contact us*/
@@ -247,6 +249,23 @@ text {
     resize: vertical;
 }
 
+/*hide content FAQ*/
+#hide-content {
+    width: 70%;
+    padding: 2px;
+}
+
+.center {
+    text-align: justify;
+    padding-left: 22%;
+}
+
+.center div {
+    background-color: white;
+    margin-right:10%;
+    margin-bottom: 1%;
+
+}
 /*action buttons*/
 .action-btn {
     background-color:white;
@@ -276,9 +295,11 @@ text {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-
+.textblue {
+    color: blue;
+}
 /*social media footer*/
-.social {
+.social-icon {
     background: #55acee;
     border-radius: 5px;
     color: white;
@@ -289,5 +310,6 @@ text {
     text-decoration: none;
 }
 
+ 
 /*portpolio*/
     
