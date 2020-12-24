@@ -1,15 +1,28 @@
-
 body {
     background-color:whitesmoke;
     font-family: Arial,sans-serif;
+   
     text-align: center;
 }
+
+h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+h5,
+h6 {
+    margin: 5px;
+}
+
 section {
-    margin: 5%;
+    margin-top: 2%;
+    background-color:whitesmoke;
 }
 
 img {
     padding: 10px;
+    margin-top: 0;
 }
 
 * {
@@ -18,8 +31,14 @@ img {
 
 .bgimage {
     background-image:url(../assets/hero-bg.jpg);
+    height: 400px;
     margin: 0;
-    padding: 1px;
+    padding: 0;
+    width: 100%;
+}
+
+.bgwhite {
+    background-color: white;
 }
 
 li {
@@ -65,21 +84,32 @@ button:hover {
     background-color: #55acee;
 }
 /*  */
-.flex-container4 {
-align-content: flex-end;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-padding-top: 100px;
-}
+.flex-container6 {
+    align-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    }
+    
+.flex-container6 div {
+    background-color: #fff;
+    box-sizing: border-box;
+    border-width: 5px;
+    border-radius: 10px;
+    color: darkseagreen;
+    font-size: 20px;
+    height: 240px;
+    margin: 20px 0;
+    text-align: center;
+    width: 240px;
+    }
 
-.flex-container4 div {
-background-color: #fff;
-font-size: 20px;
-height: 200px;
-text-align: center;
-width: 175px;
-}
+.flex-container6 :hover {
+    background-color: darkcyan;
+    color: white;
+    }
+
 
 /*about us 2 column separation*/
 .row {
@@ -96,11 +126,11 @@ width: 175px;
 #video-play {
     height: 360px;
     padding-left: 10%;
-    width: 600px;
+    width: 700px;
 }
 
 /*number of projects*/
-.flex-container {
+.flex-count-container {
     background-color: honeydew;
     display:flex;
     flex-flow: wrap;
@@ -109,21 +139,17 @@ width: 175px;
     justify-content: space-around;
 }
 
-.flex-container1 {
-    background-color: honeydew;
-    display:flex;
-    flex-flow:wrap;   
-}
 
 /* client logo*/
-.flex-container2 {
+.flex-clientlogo-container2 {
     background-color: honeydew;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin:2px;
 }
 
-.flex-container2 img {
+.flex-clientlogo-container2 img {
     font-size: 30px;
     line-height: 50px;
     margin: 10px;
@@ -132,7 +158,6 @@ width: 175px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-
 
 /*
 .navbar {
@@ -151,8 +176,7 @@ width: 175px;
     background-color: rgb(205, 236, 248);
     color: gray;
     font-style: italic;
-    margin-top: 0;
-    
+    margin-top: 0;    
 }
 
 /*action*/
@@ -162,54 +186,10 @@ width: 175px;
     padding: 30px;
 }
  
-.teams {
-    border: #fff;
-    border-width: 40px;   
-    display: flex;
-    flex-wrap: wrap;
- }
-
-.teams-card {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 16%;
-    margin: 5px 10px;
-    padding: 5%;     
-}
 
 .teams-image img {
-    max-width: 90%;
-}
-
-.teams-info {
-    background-color: #fff;  
-}
-
-#top-btn {
-    background-color: cornflowerblue;
-    border: none;
-    border-radius: 4px;
-    bottom: 10px;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px;
-    position: fixed;
-    outline: none;
-    right: 20px;
-    z-index: 99;
-    
-}
-
-#top-btn:hover {
-    background-color: red;
-}
-
-@media (max-width:920px){
-
-    .teams-card{
-        flex: 1 21%;
-    }
+    padding: 0;
+    max-width: 100%;
 }
 
 /*pricing*/
@@ -221,7 +201,7 @@ width: 175px;
     padding: 20px 30px;
     }
     
-    .flex-container5 div {
+.flex-container5 div {
     background-color: #fff;
     box-sizing: border-box;
     border-width: 5px;
@@ -229,18 +209,17 @@ width: 175px;
     color: darkseagreen;
     font-size: 20px;
     height: 400px;
-    margin: 1px;
+    margin: 20px 0;
     text-align: center;
     width: 320px;
     }
 
-    .flex-container5 :hover {
+.flex-container5 :hover {
     background-color: darkcyan;
     color: white;
     }
 
 /*contact us*/
-
 #google-img {
      height: 160px;
      width: 100%;
@@ -293,19 +272,25 @@ text {
     margin: 3px;       
 }
 
-.right {
+.arrow-right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }    
 
-.down {
+.arrow-down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+.arrow-up {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
 .textblue {
     color: blue;
 }
-/*social media footer*/
+/*social media outer box */
 .social-icon {
     background: #55acee;
     border-radius: 5px;
@@ -317,13 +302,7 @@ text {
     text-decoration: none;
 }
 
- 
-/*portpolio*/
-
-
-
-
-/*carousal*/
+/* testimonial carousal*/
 .carousel {
     margin: 30px;
     position: relative;
@@ -407,3 +386,28 @@ text {
 .carousel-bullet:hover {
     color: #aaaaaa;
 }
+
+
+/*top-arrow btn for go bottom to up */
+#top-btn {
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 4px;
+    bottom: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    position: fixed;
+    outline: none;
+    right: 20px;
+    z-index: 99;
+    
+}
+
+#top-btn:hover {
+    background-color: red;
+}
+
+
+
