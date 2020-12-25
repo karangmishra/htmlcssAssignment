@@ -1,7 +1,6 @@
 body {
     background-color:whitesmoke;
     font-family: Arial,sans-serif;
-   
     text-align: center;
 }
 
@@ -35,6 +34,52 @@ img {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    body {
+        margin-top: 2px;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+            
+     }
+     nav ul {
+         display: none;
+         height: 0;
+         flex-wrap: wrap;
+         width: 480px;
+         margin: 2px;
+     }
+
+     nav li{
+         margin: 2px;
+         width: 480px;
+         flex-wrap: wrap;
+         visibility: hidden;
+     } 
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    #bgimage { 
+        position: relative;
+        top: 0;
+       width: 480px;
+       height: 30%;           
+       align-self: center;
+    }
+
+    #video-play{ 
+        height:240px;          
+        padding: 0;
+        width: 360px;
+    }
+  
 }
 
 .bgwhite {
@@ -128,6 +173,24 @@ button:hover {
     padding-left: 10%;
     width: 700px;
 }
+
+@media screen and (max-width: 480px) {
+
+    #video-play{ 
+        height:240px;          
+        padding: 0;
+        margin: 0;
+        width: 360px;
+    }
+
+    #top-btn {
+        right: 100px;
+    }
+    
+
+}
+
+
 
 /*number of projects*/
 .flex-count-container {
