@@ -29,7 +29,7 @@ img {
     box-sizing: border-box;
 }
 
-.bgimage {
+#bgimage {
     background-image:url(../assets/hero-bg.jpg);
     height: 400px;
     margin: 0;
