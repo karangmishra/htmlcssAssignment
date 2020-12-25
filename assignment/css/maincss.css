@@ -36,52 +36,6 @@ img {
     width: 100%;
 }
 
-
-@media screen and (max-width: 480px) {
-
-    body {
-        margin-top: 2px;
-        flex-wrap: wrap;
-        height: 100%;
-        width: 100%;
-        padding: 10px;
-            
-     }
-     nav ul {
-         display: none;
-         height: 0;
-         flex-wrap: wrap;
-         width: 480px;
-         margin: 2px;
-     }
-
-     nav li{
-         margin: 2px;
-         width: 480px;
-         flex-wrap: wrap;
-         visibility: hidden;
-     } 
-
-    .row {
-        flex-wrap: wrap;
-    }
-
-    #bgimage { 
-        position: relative;
-        top: 0;
-       width: 480px;
-       height: 30%;           
-       align-self: center;
-    }
-
-    #video-play{ 
-        height:240px;          
-        padding: 0;
-        width: 360px;
-    }
-  
-}
-
 .bgwhite {
     background-color: white;
 }
@@ -89,11 +43,11 @@ img {
 li {
     list-style: none;
 }
- 
+
 nav ul {
     background-color: #fff;
     display: flex;
-    margin: 0px -10px;
+    margin: 0;
     text-decoration: none;
 }
 
@@ -101,33 +55,64 @@ nav li {
     color: gray;
     font-weight: lighter;
     list-style: none;
-    margin: 5px 10px;
+    margin: 4px 2px 2px;
+    padding: 2px;
     text-align: center;
     text-decoration: none;   
 }
 
-.push-left {
+#nav-menu {
+    visibility: hidden;
+}
+
+#logo {
+    float: left;
     color: gray; 
     margin: auto;
 }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 .primarybutton {
     background-color: #00f;
     border:0;
     border-radius:10px;
     color: #fff;
-    display: inline-block;
+    display: inline;
     font-family: 'SegoeUI SemiBold';
     font-size: 16px;
-    margin-right: 10px;
     min-width: 110px;
-    padding: 6px 10px; 
+    padding: 5px; 
     text-align: center;
 }
 
 button:hover {
     background-color: #55acee;
 }
+
 /*  */
 .flex-container6 {
     align-content: flex-end;
@@ -155,10 +140,10 @@ button:hover {
     color: white;
     }
 
-
 /*about us 2 column separation*/
 .row {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom:30px;
 }
 
@@ -174,24 +159,6 @@ button:hover {
     width: 700px;
 }
 
-@media screen and (max-width: 480px) {
-
-    #video-play{ 
-        height:240px;          
-        padding: 0;
-        margin: 0;
-        width: 360px;
-    }
-
-    #top-btn {
-        right: 100px;
-    }
-    
-
-}
-
-
-
 /*number of projects*/
 .flex-count-container {
     background-color: honeydew;
@@ -201,7 +168,6 @@ button:hover {
     font-weight: bold;
     justify-content: space-around;
 }
-
 
 /* client logo*/
 .flex-clientlogo-container2 {
@@ -222,17 +188,6 @@ button:hover {
     filter: grayscale(100%);
 }
 
-/*
-.navbar {
-    background-color: burlywood;
-    color:cornsilk;
-    font-size: 16px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    list-style: none;  
-}
-*/
 
 
 .bg-skyblue{
@@ -416,7 +371,6 @@ text {
     right: 3%;
 }
 
-
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2 {
     display: block;
@@ -450,7 +404,6 @@ text {
     color: #aaaaaa;
 }
 
-
 /*top-arrow btn for go bottom to up */
 #top-btn {
     background-color: cornflowerblue;
@@ -474,3 +427,94 @@ text {
 
 
 
+
+/* styles for browsers minimum than 960px; */
+@media only screen and (max-width: 960px) {
+    
+    nav li {
+        margin: 2px; 
+    }
+
+    #bgimage {
+        align-self: center;
+        height: 70%;
+        position: relative;
+        width: 100%;
+    }
+}
+
+/* styles for browsers smaller than 720px;*/
+@media screen and (max-width: 720px) {
+    
+    body {
+        margin-top: 2px;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        padding: 4px;
+     }
+     
+     #logo {
+         display: block;
+         padding: 2px;
+         visibility: visible;
+     }
+     #nav-menu {
+        display: block;
+        float: right;
+        margin-right: 20px;
+        visibility: visible;
+    }
+
+     nav ul {       
+        height: 0;
+        margin: 0; 
+        visibility: hidden;   
+    }
+    
+    nav li {
+        margin: 1px;
+    }
+
+    
+     
+     #bgimage {
+        align-self: center;
+        top:0;
+        height: 60%;
+        position: relative;
+        width: 720px;
+     }
+
+     #video-play{ 
+        height:240px;          
+        padding: 0;
+        margin: 0;
+        width: 360px;
+    }
+}
+
+/* styles for browsers larger than 480px; */
+@media screen and (max-width: 480px) {
+   
+
+    nav ul {
+        flex-wrap: wrap;
+        width: 460px;
+        margin: 2px;
+    }
+
+    nav li{
+        margin: 2px;
+        width: 460px;
+        flex-wrap: wrap;
+    }
+   
+    #bgimage {
+       align-self: center;
+       height: 30%;
+       position: relative;
+       top:20px;
+       width: 480px;
+    }
+}
