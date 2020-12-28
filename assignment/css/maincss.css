@@ -387,7 +387,7 @@ text {
 
  /*footer column separation*/
 .footer-container{
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     padding-bottom:30px;
     margin: 2px 10px;
@@ -395,6 +395,7 @@ text {
 
 .footer-items {
     flex: 25%;
+    font-weight: lighter;
     padding: 5px;
     text-align: justify; 
 }
