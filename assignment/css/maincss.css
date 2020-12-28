@@ -133,7 +133,6 @@ button:hover {
     box-sizing: border-box;
     border-width: 5px;
     border-radius: 10px;
-    color: darkseagreen;
     font-size: 20px;
     height: 240px;
     margin: 20px 0;
@@ -340,7 +339,6 @@ button:hover {
     color: #aaaaaa;
 }
 
-
 /*contact us*/
 #google-img {
      height: 160px;
@@ -400,7 +398,6 @@ text {
     text-align: justify; 
 }
 
-
 /*arrow sign (>)*/ 
 .arrow {
     align-content: center;
@@ -429,6 +426,7 @@ text {
 .textblue {
     color: blue;
 }
+
 /*social media outer box */
 .social-icon {
     background: #55acee;
