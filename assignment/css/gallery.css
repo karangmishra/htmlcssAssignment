@@ -1,0 +1,47 @@
+/*portfolio css*/
+.content-button {
+    border: none;
+    color: #000000;
+    background-color: #ffff;
+}
+
+.content-button:hover {
+    background-color: #F74013;
+    color: white;
+}
+
+/*portpolio image grid*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: auto; 
+}
+  
+.portfolio-img {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.portfolio-img img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+@media screen and (max-width: 800px) {
+
+    .portfolio-img {
+        flex: 50%;
+        max-width: 50%;
+    }  
+}
+  
+@media screen and (max-width: 600px) {
+
+    .portfolio-img {
+        flex: 100%;
+        max-width: 100%;
+      }
+}

@@ -14,6 +14,12 @@ h6 {
     margin: 5px;
 }
 
+p {
+    font-size: 18px;
+    margin-left: 2px;
+    padding-left: 2px;
+}
+
 section {
     margin-top: 2%;
     background-color:whitesmoke;
@@ -43,6 +49,10 @@ li {
     list-style: none;
 }
 
+#nav-menu {
+    visibility: hidden;
+}
+
 nav ul {
     background-color: #fff;
     display: flex;
@@ -60,16 +70,14 @@ nav li {
     text-decoration: none;   
 }
 
-#nav-menu {
-    visibility: hidden;
-}
-
+/*onepage logo*/
 #logo {
     color: gray;
     float: left; 
     margin: auto;
 }
 
+/*navbar dropdown*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -111,8 +119,8 @@ button:hover {
     background-color: #55acee;
 }
 
-/*  */
-.flex-container6 {
+/* start & services section */
+.flex-container {
     align-content: flex-end;
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +128,7 @@ button:hover {
     padding: 30px;
     }
     
-.flex-container6 div {
+.flex-container div {
     background-color: #fff;
     box-sizing: border-box;
     border-width: 5px;
@@ -129,23 +137,34 @@ button:hover {
     font-size: 20px;
     height: 240px;
     margin: 20px 0;
-    text-align: center;
+    padding-top: 40px;
     width: 240px;
     }
 
-.flex-container6 :hover {
+.align-left {
+    margin-left: 50px;
+    text-align :left;    
+    padding-left: 10px;
+}
+
+.flex-container :hover {
     background-color: darkcyan;
     color: white;
     }
 
+.icon-bg {    
+    border-radius: 50%;        
+    width: 180px;
+}
+
 /*about us 2 column separation*/
-.row {
+.row-flex{
     display: flex;
     flex-wrap: wrap;
     padding-bottom:30px;
 }
 
-.column {
+.column-flex{
     flex: 50%;
     padding: 10px;
     text-align: justify; 
@@ -162,13 +181,16 @@ button:hover {
     background-color: honeydew;
     display:flex;
     flex-flow: wrap;
-    font-size: xx-large;
     font-weight: bold;
     justify-content: space-around;
 }
 
+.largefont {
+    font-size: xx-large;
+}
+
 /* client logo*/
-.flex-clientlogo-container2 {
+.flex-clientlogo-container {
     background-color: honeydew;
     display: flex;
     flex-wrap: wrap;
@@ -176,7 +198,7 @@ button:hover {
     margin:2px;
 }
 
-.flex-clientlogo-container2 img {
+.flex-clientlogo-container img {
     font-size: 30px;
     line-height: 50px;
     margin: 10px;
@@ -193,21 +215,21 @@ button:hover {
     margin-top: 0;    
 }
 
-/*action*/
+/*for action section */
 .bgcyan {
     background-color: darkcyan;
     color: #fff;
     padding: 30px;
 }
  
-
+/* for team section*/
 .teams-image img {
     padding: 0;
     max-width: 100%;
 }
 
 /*pricing*/
-.flex-container5 {
+.flex-container1 {
     align-content: flex-end;
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +237,7 @@ button:hover {
     padding: 20px 30px;
     }
     
-.flex-container5 div {
+.flex-container1 div {
     background-color: #fff;
     box-sizing: border-box;
     border-width: 5px;
@@ -228,106 +250,11 @@ button:hover {
     width: 320px;
     }
 
-.flex-container5 :hover {
+.flex-container1 :hover {
     background-color: darkcyan;
     color: white;
     }
 
-/*contact us*/
-#google-img {
-     height: 160px;
-     width: 100%;
- }
-
-input,
-text {
-    width: 45%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-/*hide content FAQ*/
-#hide-content {
-    width: 70%;
-    padding: 2px;
-}
-
-.center {
-    text-align: justify;
-    padding-left: 22%;
-}
-
-.center div {
-    background-color: white;
-    margin-right:10%;
-    margin-bottom: 1%;
-
-}
-/*action buttons*/
-.action-btn {
-    background-color:white;
-    border-width: 2px;
-    border-color: #00f;
-    color: #00f;
-    padding: 10px 20px;
-}    
-     /*about us 2 column separation*/
-.footer-container{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom:30px;
-    margin: 2px 10px;
-}
-
-.footer-items {
-    flex: 25%;
-    padding: 5px;
-    text-align: justify; 
-}
-
-
-/*arrow sign*/ 
-.arrow {
-    align-content: center;
-    border: solid blue;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 2px;
-    margin: 3px;       
-}
-
-.arrow-right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}    
-
-.arrow-down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.arrow-up {
-    transform: rotate(225deg);
-    -webkit-transform: rotate(225deg);
-}
-
-.textblue {
-    color: blue;
-}
-/*social media outer box */
-.social-icon {
-    background: #55acee;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    margin: 5px 2px;
-    padding: 4px 8px;
-    text-align: center;
-    text-decoration: none;
-}
 
 /* testimonial carousal*/
 .carousel {
@@ -413,6 +340,106 @@ text {
     color: #aaaaaa;
 }
 
+
+/*contact us*/
+#google-img {
+     height: 160px;
+     width: 100%;
+ }
+
+/*input field*/
+input,
+text {
+    width: 45%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/*hide content FAQ*/
+#hide-content {
+    width: 70%;
+    padding: 2px;
+}
+
+.faq-center {
+    text-align: justify;
+    padding-left: 22%;
+}
+
+.faq-center div {
+    background-color: white;
+    margin-right:10%;
+    margin-bottom: 1%;
+
+}
+
+/*action buttons*/
+.action-btn {
+    background-color:white;
+    border-width: 2px;
+    border-color: #00f;
+    color: #00f;
+    padding: 10px 20px;
+}  
+
+ /*footer column separation*/
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:30px;
+    margin: 2px 10px;
+}
+
+.footer-items {
+    flex: 25%;
+    padding: 5px;
+    text-align: justify; 
+}
+
+
+/*arrow sign (>)*/ 
+.arrow {
+    align-content: center;
+    border: solid blue;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    margin: 3px;       
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}    
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-up {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
+.textblue {
+    color: blue;
+}
+/*social media outer box */
+.social-icon {
+    background: #55acee;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin: 5px 2px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
 /*top-arrow btn for go bottom to up */
 #top-btn {
     background-color: cornflowerblue;
@@ -434,9 +461,6 @@ text {
     background-color: red;
 }
 
-
-
-
 /* styles for browsers minimum than 960px; */
 @media only screen and (max-width: 960px) {
     
@@ -447,7 +471,6 @@ text {
     #bgimage {
         align-self: center;
         height: 70%;
-        position: fixed;
         width: 100%;
     }
 }
