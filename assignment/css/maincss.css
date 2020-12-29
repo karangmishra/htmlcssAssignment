@@ -1,5 +1,5 @@
 body {
-    background-color:whitesmoke;
+    background-color: rgb(245, 245, 245);
     font-family: Arial,sans-serif;
     text-align: center;
 }
@@ -20,13 +20,13 @@ p {
     padding-left: 2px;
 }
 
-section {
-    margin-top: 2%;
-    background-color:whitesmoke;
-}
-
 img {
     margin-top: 0;
+}
+
+section {
+    background-color: rgb(245, 245, 245);
+    margin-top: 2%;
 }
 
 * {
@@ -34,7 +34,7 @@ img {
 }
 
 #bgimage {
-    background-image:url(../assets/hero-bg.jpg);
+    background-image: url(../assets/hero-bg.jpg);
     height: 460px;
     margin: 0;
     padding: 0;
@@ -42,7 +42,7 @@ img {
 }
 
 .bgwhite {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 li {
@@ -61,7 +61,7 @@ nav ul {
 }
 
 nav li {
-    color: gray;
+    color: rgb(128, 128, 128);
     font-weight: lighter;
     list-style: none;
     margin: 4px 2px 2px;
@@ -72,22 +72,22 @@ nav li {
 
 /*onepage logo*/
 #logo {
-    color: gray;
+    color: rgb(128, 128, 128);
     float: left; 
     margin: auto;
 }
 
 /*navbar dropdown*/
 .dropdown-content {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: none;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
   
 .dropdown-content a {
-    color: black;   
+    color: #000;   
     display: block; 
     padding: 12px 16px;    
     text-align: left;
@@ -96,16 +96,16 @@ nav li {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
-    }
+}
   
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 .primarybutton {
     background-color: #00f;
-    border:0;
-    border-radius:10px;
+    border: 0;
+    border-radius: 10px;
     color: #fff;
     display: inline;
     font-family: 'SegoeUI SemiBold';
@@ -126,30 +126,30 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 30px;
-    }
+}
     
 .flex-container div {
     background-color: #fff;
     box-sizing: border-box;
-    border-width: 5px;
     border-radius: 10px;
+    border-width: 5px;
     font-size: 20px;
     height: 240px;
     margin: 20px 0;
     padding-top: 40px;
     width: 240px;
-    }
+}
 
 .align-left {
     margin-left: 50px;
-    text-align :left;    
     padding-left: 10px;
+    text-align: left;    
 }
 
 .flex-container :hover {
-    background-color: darkcyan;
-    color: white;
-    }
+    background-color: rgb(0, 139, 139);
+    color: #fff;
+}
 
 .icon-bg {    
     border-radius: 50%;        
@@ -157,13 +157,13 @@ button:hover {
 }
 
 /*about us 2 column separation*/
-.row-flex{
+.row-flex {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom:30px;
+    padding-bottom: 30px;
 }
 
-.column-flex{
+.column-flex {
     flex: 50%;
     padding: 10px;
     text-align: justify; 
@@ -177,8 +177,8 @@ button:hover {
 
 /*number of projects*/
 .flex-count-container {
-    background-color: honeydew;
-    display:flex;
+    background-color: rgb(240, 255, 240);
+    display: flex;
     flex-flow: wrap;
     font-weight: bold;
     justify-content: space-around;
@@ -190,40 +190,40 @@ button:hover {
 
 /* client logo*/
 .flex-clientlogo-container {
-    background-color: honeydew;
+    background-color: rgb(240, 255, 240);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin:2px;
+    margin: 2px;
 }
 
 .flex-clientlogo-container img {
+    filter: grayscale(100%);
     font-size: 30px;
     line-height: 50px;
     margin: 10px;
     text-align: center;
     width: 100px;
-    filter: grayscale(100%);
 }
 
-.bg-skyblue{
+.bg-skyblue {
     background-color: rgb(205, 236, 248);
-    color: gray;
+    color: rgb(128, 128, 128);
     font-style: italic;
     margin-top: 0;    
 }
 
 /*for action section */
 .bgcyan {
-    background-color: darkcyan;
+    background-color: rgb(0, 139, 139);
     color: #fff;
     padding: 30px;
 }
  
 /* for team section*/
 .teams-image img {
-    padding: 0;
     max-width: 100%;
+    padding: 0;
 }
 
 /*pricing*/
@@ -233,31 +233,30 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px 30px;
-    }
+}
     
 .flex-container1 div {
     background-color: #fff;
     box-sizing: border-box;
-    border-width: 5px;
     border-radius: 10px;
-    color: darkseagreen;
+    border-width: 5px;
+    color: rgb(143, 188, 143);
     font-size: 20px;
     height: 400px;
     margin: 20px 0;
     text-align: center;
-    width: 320px;
-    }
+    width: 320px;   
+}
 
 .flex-container1 :hover {
-    background-color: darkcyan;
-    color: white;
-    }
-
+    background-color: rgb(0, 139, 139);
+    color: #fff;
+}
 
 /* testimonial carousal*/
 .carousel {
-    margin: 30px;
     position: relative;
+    margin: 30px;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -280,16 +279,16 @@ button:hover {
 .carousel-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
-    color: black;
+    color: #000;
     cursor: pointer;
     display: none;
     font-size: 40px;
     height: 40px;
     line-height: 35px;
     position: absolute;
+    text-align: center;
     top: 50%;
     transform: translate(0, -50%);
-    text-align: center;
     width: 40px;
     z-index: 10;
 }
@@ -332,58 +331,57 @@ button:hover {
 }
 
 .carousel-bullet:hover {
-    color: #aaaaaa;
+    color: #aaa;
 }
 
 /*contact us*/
 #google-img {
-     height: 160px;
-     width: 100%;
- }
+    height: 160px;
+    width: 100%;
+}
 
 /*input field*/
 input,
 text {
-    width: 45%;
-    padding: 12px;
     border: 1px solid #ccc;
-    margin-top: 6px;
     margin-bottom: 16px;
+    margin-top: 6px;
+    padding: 12px;
     resize: vertical;
+    width: 45%;
 }
 
 /*hide content FAQ*/
 #hide-content {
-    width: 70%;
     padding: 2px;
+    width: 70%;
 }
 
 .faq-center {
-    text-align: justify;
     padding-left: 22%;
+    text-align: justify;
 }
 
 .faq-center div {
-    background-color: white;
-    margin-right:10%;
+    background-color: #fff;
     margin-bottom: 1%;
-
+    margin-right: 10%;
 }
 
 /*action buttons*/
 .action-btn {
-    background-color:white;
-    border-width: 2px;
+    background-color: #fff;
     border-color: #00f;
+    border-width: 2px;
     color: #00f;
     padding: 10px 20px;
 }  
 
  /*footer column separation*/
-.footer-container{
+.footer-container {
     display: flex;  
     flex-wrap: wrap;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     margin: 2px 10px;
 }
 
@@ -397,11 +395,11 @@ text {
 /*arrow sign (>)*/ 
 .arrow {
     align-content: center;
-    border: solid blue;
+    border: solid rgb(0, 0, 255);
     border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 2px;
-    margin: 3px;       
+    margin: 3px;  
+    padding: 2px;     
 }
 
 .arrow-right {
@@ -417,14 +415,14 @@ text {
 }
 
 .textblue {
-    color: blue;
+    color: rgb(0, 0, 255);
 }
 
 /*social media outer box */
 .social-icon {
     background: #55acee;
     border-radius: 5px;
-    color: white;
+    color: #fff;
     font-size: 20px;
     margin: 5px 2px;
     padding: 4px 8px;
@@ -434,27 +432,26 @@ text {
 
 /*top-arrow btn for go bottom to up */
 #top-btn {
-    background-color: cornflowerblue;
+    background-color: rgb(100, 149, 237);
     border: none;
     border-radius: 4px;
     bottom: 10px;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 18px;
+    outline: none;
     padding: 10px;
     position: fixed;
-    outline: none;
     right: 20px;
     z-index: 99;
-    
 }
 
 #top-btn:hover {
-    background-color: red;
+    background-color: #ff000f;
 }
 
-/* styles for browsers minimum than 960px; */
-@media only screen and (max-width: 960px) {
+/* styles for browsers minimum than 1066px; */
+@media only screen and (max-width: 1066px) {
     
     nav li {
         margin: 2px; 
@@ -465,32 +462,34 @@ text {
         height: 70%;
         width: 100%;
     }
+
 }
 
 /* styles for browsers smaller than 720px;*/
 @media screen and (max-width: 720px) {
     
     body {
-        margin-top: 2px;
         flex-wrap: wrap;
         height: 100%;
-        width: 100%;
+        margin-top: 2px;
         padding: 4px;
-     }
+        width: 100%;
+    }
      
-     #logo {
-         display: block;
-         padding: 2px;
-         visibility: visible;
-     }
-     #nav-menu {
+    #logo {
+        display: block;
+        padding: 2px;
+        visibility: visible;
+    }
+
+    #nav-menu {
         display: block;
         float: right;
         margin-right: 20px;
         visibility: visible;
     }
 
-     nav ul {       
+    nav ul {       
         height: 0;
         margin: 0; 
         visibility: hidden;   
@@ -500,20 +499,21 @@ text {
         margin: 1px;
     }
      
-     #bgimage {
+    #bgimage {
         align-self: center;
-        top:0;
         height: 60%;
         position: relative;
+        top: 0;
         width: 720px;
-     }
+    }
 
-     #video-play{ 
-        height:240px;          
-        padding: 0;
+    #video-play { 
+        height: 240px;          
         margin: 0;
+        padding: 0;
         width: 360px;
     }
+
 }
 
 /* styles for browsers larger than 480px; */
@@ -521,21 +521,22 @@ text {
    
     nav ul {
         flex-wrap: wrap;
-        width: 460px;
         margin: 2px;
+        width: 460px;
     }
 
-    nav li{
+    nav li {
+        flex-wrap: wrap;
         margin: 2px;
         width: 460px;
-        flex-wrap: wrap;
     }
    
     #bgimage {
        align-self: center;
        height: 30%;
        position: relative;
-       top:20px;
+       top: 20px;
        width: 480px;
     }
+    
 }

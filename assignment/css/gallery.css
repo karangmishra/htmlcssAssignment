@@ -1,13 +1,13 @@
 /*portfolio css*/
 .content-button {
+    background-color: #fff;
     border: none;
     color: #000000;
-    background-color: #ffff;
 }
 
 .content-button:hover {
     background-color: #F74013;
-    color: white;
+    color: #fff;
 }
 
 /*portpolio image grid*/
@@ -36,6 +36,7 @@
         flex: 50%;
         max-width: 50%;
     }  
+
 }
   
 @media screen and (max-width: 600px) {
@@ -43,5 +44,6 @@
     .portfolio-img {
         flex: 100%;
         max-width: 100%;
-      }
+    }
+    
 }
