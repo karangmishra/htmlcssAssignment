@@ -186,6 +186,7 @@ button:hover {
 
 .largefont {
     font-size: xx-large;
+    padding-top: 4px;
 }
 
 /* client logo*/
