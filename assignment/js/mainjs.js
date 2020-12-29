@@ -1,27 +1,26 @@
 
-/* to make a button   on click goes to top*/
+/*to perform a function, on button click we directly goes to top section of webpage*/
 let topbtn = document.getElementById('top-btn');
-window.onscroll = function() {
+window.onscroll = function () {
     scrollFunction()
 };
 
 function scrollFunction() {
-    if (document.documentElement.scrollTop > 20){
+    if (document.documentElement.scrollTop > 20) {
         topbtn.style.display = 'block';
-    
-    }
-    else {
+
+    } else {
         topbtn.style.display = 'none';
     }
 }
 
-// when the user clicks on button, scroll to top of the document
+/*when an user clicks on button, scroll to top of the document */
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-/*show answer of FAQ section */
+/*show hiden answer of the question in FAQ section */
 function show() {
     let getData = document.getElementById('hide-content');
     if (getData.style.display === 'none') {

@@ -324,17 +324,6 @@ button:hover {
     margin: 0 5px;
 }
 
-.carousel-bullet {
-    color: #428bca;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: #aaa;
-}
-
 /*contact us*/
 #google-img {
     height: 160px;
