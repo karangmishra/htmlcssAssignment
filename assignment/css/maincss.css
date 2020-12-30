@@ -1,11 +1,25 @@
 body {
     background-color: rgb(245, 245, 245);
     font-family: Arial,sans-serif;
+    margin: 0 16px;
     text-align: center;
 }
 
+#bgimage {
+    background-image: url(../assets/hero-bg.jpg);
+    height: 460px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+}
+
+.bgwhite {
+    background-color: rgb(255, 255, 255);
+}
+
 h2 {
-    margin: 10px;
+    margin-top: 4%;
     padding: 10px;
 }
 
@@ -14,44 +28,20 @@ h6 {
     margin: 5px;
 }
 
-p {
-    display: block;
-    font-size: 18px;
-    margin-left: 2px;
-    padding-left: 2px;
-}
-
-p span {
-    display: block;
-  }
-
 img {
     margin-top: 0;
 }
 
-section {
-    background-color: rgb(245, 245, 245);
-    margin-top: 2%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-#bgimage {
-    background-image: url(../assets/hero-bg.jpg);
-    height: 460px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.bgwhite {
-    background-color: rgb(255, 255, 255);
-}
-
 li {
     list-style: none;
+}
+
+/*onepage logo*/
+#logo {
+    color: rgb(128, 128, 128);
+    float: left;
+    font-size: x-large; 
+    margin: auto;
 }
 
 #nav-menu {
@@ -61,7 +51,6 @@ li {
 nav ul {
     background-color: #fff;
     display: flex;
-    margin: 0;
     text-decoration: none;
 }
 
@@ -70,17 +59,9 @@ nav li {
     font-weight: lighter;
     list-style: none;
     margin: 4px 2px 2px;
-    padding: 2px;
+    padding: 2px 20px;
     text-align: center;
     text-decoration: none;   
-}
-
-/*onepage logo*/
-#logo {
-    color: rgb(128, 128, 128);
-    float: left;
-    font-size: x-large; 
-    margin: auto;
 }
 
 /*navbar dropdown*/
@@ -106,6 +87,25 @@ nav li {
   
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+p {
+    display: block;
+    font-size: 16px;
+    margin-left: 2px;
+    padding-left: 2px;
+}
+
+p span {
+    display: block;
+}
+
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .primarybutton {
@@ -143,13 +143,7 @@ button:hover {
     height: 240px;
     margin: 20px 0;
     padding-top: 40px;
-    width: 240px;
-}
-
-.align-left {
-    margin-left: 50px;
-    padding-left: 10px;
-    text-align: left;    
+    width: 200px;
 }
 
 .flex-container :hover {
@@ -160,6 +154,12 @@ button:hover {
 .icon-bg {    
     border-radius: 50%;        
     width: 180px;
+}
+
+.align-left {
+    margin-left: 50px;
+    padding-left: 10px;
+    text-align: left;    
 }
 
 /*about us 2 column separation*/
@@ -181,7 +181,7 @@ button:hover {
     width: 600px;
 }
 
-/*number of projects*/
+/*number of client,projects,awards section container*/
 .flex-count-container {
     background-color: rgb(240, 255, 240);
     display: flex;
@@ -361,6 +361,7 @@ text {
     width: 70%;
 }
 
+/*align questions */
 .faq-center {
     padding-left: 22%;
     text-align: justify;
