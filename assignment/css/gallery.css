@@ -1,4 +1,4 @@
-/*portfolio css*/
+/* portfolio css */
 .content-button {
     background-color: #fff;
     border: none;
@@ -10,7 +10,7 @@
     color: #fff;
 }
 
-/*portpolio image grid*/
+/* portpolio image grid */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -30,16 +30,12 @@
     width: 100%;
 }
   
-@media screen and (max-width: 800px) {
+/* for screen below or equal to 480px */
+@media screen and (max-width: 480px) {
 
-    .portfolio-img {
-        flex: 50%;
-        max-width: 50%;
-    }  
-
-}
-  
-@media screen and (max-width: 600px) {
+    .gallery {
+        margin-left: auto;
+    }
 
     .portfolio-img {
         flex: 100%;
