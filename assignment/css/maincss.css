@@ -1,4 +1,11 @@
-#bgimage {
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: Arial,sans-serif;
+    margin: 0 16px;
+    text-align: center;
+}
+
+#background-image {
     background-image: url(../assets/hero-bg.jpg);
     height: 460px;
     margin: 0;
@@ -7,22 +14,9 @@
     width: 100%;
 }
 
-body {
-    background-color: rgb(245, 245, 245);
-    font-family: Arial,sans-serif;
-    margin: 0 16px;
-    text-align: center;
-}
-
 /* styles for background image & body, minimum than or equal 1080px; */
 @media only screen and (max-width: 1080px) {
     
-    #bgimage {
-        align-self: center;
-        height: 70%;
-        width: 100%;
-    }
-
     body {
         flex-wrap: wrap;
         height: 100%;
@@ -31,9 +25,15 @@ body {
         width: 100%;
     }
 
+    #background-image {
+        align-self: center;
+        height: 70%;
+        width: 100%;
+    }
+
 }
 
-.bgwhite {
+.background-white {
     background-color: rgb(255, 255, 255);
 }
 
@@ -172,16 +172,22 @@ p {
     padding-left: 2px;
 }
 
-p span {
-    display: block;
-}
-
 section {
     background-color: rgb(245, 245, 245);
 }
 
 * {
     box-sizing: border-box;
+}
+
+/* action buttons */
+.action-btn {
+    background-color: #fff;
+    border-color: #00f;
+    border-radius: 4px;
+    border-width: 2px;
+    color: #00f;
+    padding: 10px 20px;
 }
 
 .primarybutton {
@@ -226,11 +232,6 @@ button:hover {
     color: #fff;
 }
 
-.icon-bg {    
-    border-radius: 50%;        
-    width: 180px;
-}
-
 .align-left {
     margin-left: 50px;
     padding-left: 10px;
@@ -255,7 +256,7 @@ button:hover {
     padding-left: 10%;
     width: 600px;
 }
-
+  
 /* styles for video-play in browsers of ipad (smaller than or equal 720px) */
 @media screen and (max-width: 720px) {
               
@@ -277,7 +278,7 @@ button:hover {
     justify-content: space-around;
 }
 
-.largefont {
+.largerfont {
     display: block;
     font-size: xx-large;
     padding: 4px;
@@ -308,7 +309,7 @@ button:hover {
     
 }
 
-.bg-skyblue {
+.quote {
     background-color: rgb(205, 236, 248);
     color: rgb(128, 128, 128);
     font-style: italic;
@@ -316,7 +317,7 @@ button:hover {
 }
 
 /* for action section */
-.bgcyan {
+.background-cyan {
     background-color: rgb(0, 139, 139);
     color: #fff;
     padding: 30px;
@@ -409,7 +410,7 @@ button:hover {
 }
 
 /* contact us */
-.blue-text {
+.contact-info {
     color: #00f;
     display: block;
     font-size: small;
@@ -421,7 +422,7 @@ button:hover {
     width: 100%;
 }
 
-/* input field */
+/* user input field */
 input,
 text {
     border: 1px solid #ccc;
@@ -432,33 +433,23 @@ text {
     width: 45%;
 }
 
-/* hide content FAQ */
-#hide-content {
-    padding: 2px;
-    width: 70%;
-}
-
-/* align questions */
-.faq-center {
+/* align questions of faq section */
+.faq-questions {
     padding-left: 22%;
     text-align: justify;
 }
 
-.faq-center div {
+.faq-questions div {
     background-color: #fff;
     margin-bottom: 1%;
     margin-right: 10%;
 }
 
-/* action buttons */
-.action-btn {
-    background-color: #fff;
-    border-color: #00f;
-    border-radius: 4px;
-    border-width: 2px;
-    color: #00f;
-    padding: 10px 20px;
-}  
+/* hide content FAQ */
+#hide-answer {
+    padding: 2px;
+    width: 70%;
+}
 
  /* footer column separation */
 .footer-container {
@@ -480,7 +471,7 @@ text {
     padding-bottom: 5%;
 }
 
-.large-text {
+.footer-logo {
     font-size: x-large;
 }
 
@@ -504,10 +495,6 @@ text {
 
 .arrow-up {
     transform: rotate(225deg);
-}
-
-.textblue {
-    color: rgb(0, 0, 255);
 }
 
 /* social media outer box */
@@ -541,11 +528,3 @@ text {
 #top-btn:hover {
     background-color: #ff000f;
 }
-
-
-
-
-
-
-
-
