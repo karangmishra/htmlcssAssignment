@@ -1,3 +1,6 @@
+@import './navbar.css';
+@import './portfolio.css';
+
 body {
     background-color: rgb(245, 245, 245);
     font-family: Arial,sans-serif;
@@ -53,116 +56,6 @@ img {
 
 li {
     list-style: none;
-}
-
-/* onepage logo */
-#logo {
-    color: rgb(128, 128, 128);
-    float: left;
-    font-size: x-large; 
-    margin: auto;
-}
-
-/* navbar */
-#nav-menu {
-    visibility: hidden;
-}
-
-nav ul {
-    background-color: #fff;
-    display: flex;
-    text-decoration: none;
-}
-
-nav li {
-    color: rgb(128, 128, 128);
-    flex-wrap: nowrap;
-    font-weight: lighter;
-    list-style: none;
-    margin: 4px 2px;
-    padding: 2px 20px;
-    text-align: center;
-    text-decoration: none;   
-}
-
-/* styles for navbar minimum than or equal 1080px; */
-@media only screen and (max-width: 1080px) {
-    
-    nav li {
-        margin: 2px;
-        padding: 2px;
-    } 
-
-}
-
-/* styles for browsers ipad (smaller than or equal 720px) */
-@media screen and (max-width: 720px) {
-         
-    #logo {
-        display: block;
-        padding: 2px;
-        visibility: visible;
-    }
-
-    #nav-menu {
-        display: block;
-        float: right;
-        margin-right: 0;
-        visibility: visible;
-    }
-
-    nav ul {       
-        height: 0;
-        margin: 0; 
-        visibility: hidden;   
-    }
-    
-    nav li {
-        margin: 1px;
-    }
-
-}
-
-/* styles for browsers smaller than or equal 480px; */
-@media screen and (max-width: 480px) {
-   
-    nav ul {
-        flex-wrap: wrap;
-        margin: 2px;
-        width: 460px;
-    }
-
-    nav li {
-        flex-wrap: wrap;
-        margin: 2px;
-        width: 460px;
-    }
-    
-}
-
-/* navbar dropdown */
-.dropdown-content {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    display: none; 
-    min-width: 160px;
-    position: absolute;
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    color: #000;   
-    display: block; 
-    padding: 12px 16px;    
-    text-align: left;
-    text-decoration: none;  
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 p {
@@ -251,12 +144,26 @@ button:hover {
     text-align: justify; 
 }
  
+.frame {
+     position: relative; 
+}
+
+.frame img {
+     display: block; 
+}
+ 
+.frame .fa-play-circle {
+    bottom:30%;
+    position: absolute;
+    left:30%; 
+}
+ 
 #video-play {
     height: 360px;
     padding-left: 10%;
     width: 600px;
 }
-  
+
 /* styles for video-play in browsers of ipad (smaller than or equal 720px) */
 @media screen and (max-width: 720px) {
               
