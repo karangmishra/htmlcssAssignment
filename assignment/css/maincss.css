@@ -1,5 +1,5 @@
-@import './navbar.css';
-@import './portfolio.css';
+@import url('./navbar.css');
+@import url('./portfolio.css');
 
 body {
     background-color: rgb(245, 245, 245);
