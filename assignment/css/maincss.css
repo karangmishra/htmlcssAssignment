@@ -341,6 +341,40 @@ text {
 }
 
 /* align questions of faq section */
+.faq-accordion {
+    background-color: #fff;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    font-size: 15px;
+    outline: none;
+    padding: 18px;
+    text-align: left;
+    transition: 0.4s;
+    width: 80%;
+}
+  
+.faq-accordion:after {
+    color: #00f;
+    content: '+';
+    float: right;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.faq-active:after {
+    content: "-";
+}
+
+.faq-panel {
+    background-color: #fff;
+    max-height: 0;
+    max-width: 80%;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 0.2s ease-out;
+}
+
 .faq-questions {
     padding-left: 22%;
     text-align: justify;
@@ -351,14 +385,8 @@ text {
     margin-bottom: 1%;
     margin-right: 10%;
 }
-
-/* hide content FAQ */
-#hide-answer {
-    padding: 2px;
-    width: 70%;
-}
-
- /* footer column separation */
+  
+/* footer column separation */
 .footer-container {
     background-color: rgb(247, 247, 247);
     display: flex;  

@@ -1,4 +1,3 @@
-
 /*to perform a function, on button click we directly goes to top section of webpage*/
 let topbtn = document.getElementById('top-btn');
 window.onscroll = function () {
@@ -8,7 +7,6 @@ window.onscroll = function () {
 function scrollFunction() {
     if (document.documentElement.scrollTop > 20) {
         topbtn.style.display = 'block';
-
     } else {
         topbtn.style.display = 'none';
     }
@@ -21,13 +19,15 @@ function topFunction() {
 }
 
 /*show hiden answer of the question in FAQ section */
-function show() {
-    let getData = document.getElementById('hide-content');
-    if (getData.style.display === 'none') {
-        getData.style.display = 'block';
+let acc = document.getElementsByClassName("faq-accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function() {
+    this.classList.toggle('faq-active');
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-        getData.style.display = 'none'
-    }
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    } 
+  });
 }
-
-

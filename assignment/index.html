@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/maincss.css">
-    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>OnePage</title>
 </head>
 
 <body>
-    <!--navigation bar-->
-    <div id="bgimage">
-        <nav id="nav">
-            <ul>
-                <li id="logo">OnePage</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Team</li>
-                <li>Pricing</li>
-                <li class="dropdown">
-                    Drop Down<i class="fa fa-caret-down"></i>
-                    <div class="dropdown-content">
-                        <a href="#">Lastest</a>
-                        <a href="#">Old</a>
-                        <a href="#">Top 10</a>
-                    </div>
-                <li>Contact</li>
-                <a class="primarybutton">Get Started</a>
-            </ul>
-            <a href="#" onclick="showNav()">
-                <i class="fa fa-bars" id="nav-menu"></i>
-            </a>
+    <div id="background-image">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar" id="topnav">
+                <div class="nav-header">
+                    <a class="nav-title">OnePage</a>
+                </div>
+                <a href="#"></a>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#potfolio">Portfolio</a>
+                <a href="#team">Team</a>
+                <a href="#pricing">Pricing</a>
+                <a class="dropdown">Drop Down<i class="fa fa-caret-down"></i>
+                    <span class="dropdown-content">Newsletter</span>
+                </a>
+                <a href="#contact">Contact</a>
+                <a class="button">Get Strated</a>
+                <a href="#"></a>
+                <a href="javascript:void(0);" class="menu-bar" onclick=navmenuFunction()>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
+        <!-- navbar end -->
         <div>
             <h1>Website Template</h1>
             <h3>We are team of talented designers</h3>
@@ -65,18 +65,16 @@
         </div>
     </div>
     <!--about us-->
-    <section class="bgwhite">
+    <section class="background-white">
         <h2>ABOUT US</h2>
         <p>Mangnam dolores commodi susscript. Necessitatibus elus consectetur ex aliquid fuga enum quidem.</p>
         <div class="row-flex">
             <div class="column-flex">
                 <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do elusmod tempor incididunt ut labore et
                     dolore magna aliqua.</p>
-                <ul>
-                    <li><i class="material-icons">done_all</i>laboris nisi ut aliquip ex ea commodo consequat</li>
-                    <li><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</li>
-                    <li><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</li>
-                </ul>
+                <p><i class="material-icons">done_all</i>laboris nisi ut aliquip ex ea commodo consequat</p>
+                <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
+                <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
             </div>
             <div class="column-flex">
                 <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -87,28 +85,27 @@
         </div>
         <div>
             <div class="flex-count-container">
-                <p><span class="largefont">65</span>Happy Clients</p>
-                <p><span class="largefont">85</span>Projects</p>
-                <p><span class="largefont">12</span>Years of Experience</p>
-                <p><span class="largefont">15</span>Awards</p>
+                <p><span class="largerfont">65</span>Happy Clients</p>
+                <p><span class="largerfont">85</span>Projects</p>
+                <p><span class="largerfont">12</span>Years of Experience</p>
+                <p><span class="largerfont">15</span>Awards</p>
             </div>
         </div>
         <!--divide and make 2 column for text -->
-        <div class="row-flex bgwhite">
-            <div class="column-flex">
+        <div class="row-flex background-white">
+            <div class="column-flex frame">
                 <img src="./assets/about-video.jpg" id="video-play" alt="video play">
+                <a href="./assets/about-video.jpg"><i class="fa fa-play-circle fa-5x"></i></a>
             </div>
             <div class="column-flex">
                 <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do elusmod tempor incididunt ut labore et
                     dolore magna aliqua.</p>
-                <ul>
-                    <li><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea</li>
-                    <li><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</li>
-                    <li><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</li>
-                    <li><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit. in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident</li>
-                </ul>
+                <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea</p>
+                <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
+                <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit. in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                     non sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -135,20 +132,20 @@
                 checked="checked">
             <div class="carousel-item flex-container1">
                 <div>
-                    <p class="bg-skyblue"><i class="fa fa-quote-left"></i> Enim nisi quem export duis labore cillum quae
+                    <p class="quote"><i class="fa fa-quote-left"></i> Enim nisi quem export duis labore cillum quae
                         magna enim sint quorum nullaquem veniam duis minim tempor labore quem eram duis noster
                         <i class="fa fa-quote-right"></i>
                     </p>
                     <img src="./assets/testimonials-1.jpg" class="avatar" alt="testimonials-1">
                 </div>
                 <div>
-                    <p class="bg-skyblue"><i class="fa fa-quote-left"></i> Enim nisi quem export duis
+                    <p class="quote"><i class="fa fa-quote-left"></i> Enim nisi quem export duis
                         labore cillum quae magna enim sint quorum nullaquem veniam duis minim tempor labore
                         quem eram duis noster<i class="fa fa-quote-right"></i></p>
                     <img src="./assets/testimonials-2.jpg" class="avatar" alt="testimonials-2">
                 </div>
                 <div>
-                    <p class="bg-skyblue"><i class="fa fa-quote-left"></i> Enim nisi quem export duis
+                    <p class="quote"><i class="fa fa-quote-left"></i> Enim nisi quem export duis
                         labore cillum quae magna enim sint quorum nullaquem veniam duis minim tempor labore
                         quem eram duis noster<i class="fa fa-quote-right"></i></p>
                     <img src="./assets/testimonials-3.jpg" class="avatar" alt="testimonials-3">
@@ -157,13 +154,13 @@
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true">
             <div class="carousel-item flex-container1">
                 <div>
-                    <p class="bg-skyblue"><i class="fa fa-quote-left"></i> Enim nisi quem export duis
+                    <p class="quote"><i class="fa fa-quote-left"></i> Enim nisi quem export duis
                         labore cillum quae magna enim sint quorum nullaquem veniam duis minim tempor labore
                         quem eram duis noster<i class="fa fa-quote-right"></i></p>
                     <img src="./assets/testimonials-4.jpg" class="avatar" alt="testimonials-4">
                 </div>
                 <div>
-                    <p class="bg-skyblue"><i class="fa fa-quote-left"></i> Enim nisi quem export duis labore
+                    <p class="quote"><i class="fa fa-quote-left"></i> Enim nisi quem export duis labore
                         cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem
                         eram duis noster<i class="fa fa-quote-right"></i></p>
                     <img src="./assets/testimonials-5.jpg" class="avatar" alt="testimonials-5">
@@ -216,7 +213,7 @@
             </div>
         </div>
         <!--6 part of services-->
-        <div class="bgcyan">
+        <div class="background-cyan">
             <h2>Call To Action</h2>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paritur.
                 Excepteur sint occaecat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -224,7 +221,7 @@
         </div>
     </section>
     <!--portfolio image section-->
-    <section class="bgwhite">
+    <section class="background-white">
         <h2>PORTFOLIO</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus elus consequatur ex aliquid fuga enum quidem. Sit sint
             consectetur velit. Quisquam quos qulsquam cupiditate. Et nemo qui impedit suscipit alias ea. Qula fuglat
@@ -289,7 +286,7 @@
         <div class="flex-container1">
             <div>
                 <h5>FREE</h5>
-                <p class="largefont"><sup>$</sup><strong>0</strong>/month</p>
+                <p><sup>$</sup><span class="largerfont" style="display: inline;">0</span>/month</p>
                 <p>Now is it avaliable. you have to purchase it.</p>
                 <p><s>Pheretra massa</s></p>
                 <p><s>massa ultrasic</s></p>
@@ -297,7 +294,8 @@
             </div>
             <div>
                 <h5>BUSSINESS</h5>
-                <p class="largefont"><sup>$</sup><strong>19</strong>/month</p>
+                <p><sup>$</sup><span class="largerfont" style="display: inline;"><strong>19</strong></span>/month
+                </p>
                 <p>Now is it avaliable. you have to purchase it.</p>
                 <p>Pheretra massa</p>
                 <p><s>massa ultrasic</s></p>
@@ -305,7 +303,7 @@
             </div>
             <div>
                 <h5>DEVLOPER</h5>
-                <p class="largefont"><sup>$</sup><strong>29</strong>/month</p>
+                <p><sup>$</sup><span class="largerfont" style="display: inline"><strong>29</strong></span>/month</p>
                 <p>Now is it avaliable. you have to purchase it.</p>
                 <p>Pheretra massa</p>
                 <p>massa ultrasic</p>
@@ -318,36 +316,31 @@
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus elus consequatur ex aliquid fuga enum quidem. Sit sint
             consectetur velit. Quisquam quos qulsquam cupiditate.</p>
-        <div class="faq-center">
-            <div>
-                <p><i class="fa fa-question-circle-o"></i>Non consecteur a erat nam at lectus urna duis?
-                    <button class="arrow arrow-down" onclick="show()"></button>
-                </p>
-                <p id="hide-content">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+        <div class="faq-questions">
+            <button class="faq-accordion"><i class="fa fa-question-circle-o"></i>Tortor vitae purus faucibus ornare.
+                vel pharetra vel turpis nunc eget lorem dolor?</button>
+            <div class="faq-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te ut labore</p>
             </div>
-            <div>
-                <p><i class="fa fa-question-circle-o"></i>Feugiat sclerisque varius morbi enim nunc?
-                    <button class="arrow arrow-down"></button>
-                </p>
+            <button class="faq-accordion"><i class="fa fa-question-circle-o"></i>Tortor vitae purus faucibus ornare.
+                vel pharetra vel turpis nunc eget lorem dolor?</button>
+            <div class="faq-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te ut labore</p>
             </div>
-            <div>
-                <p><i class="fa fa-question-circle-o"></i>Dolor sit amet consectetur adipiscing elit?
-                    <button class="arrow arrow-down"></button>
-                </p>
+            <button class="faq-accordion"><i class="fa fa-question-circle-o"></i>Tortor vitae purus faucibus ornare.
+                vel pharetra velturpis nunc eget lorem dolor?</button>
+            <div class="faq-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te ut labore</p>
             </div>
-            <div>
-                <p><i class="fa fa-question-circle-o"></i>Tempus quam pellentesque nec nam aliquam sem et tortor
-                    consequat?<button class="arrow arrow-down"></button></p>
-            </div>
-            <div>
-                <p><i class="fa fa-question-circle-o"></i>Tortor vitae purus faucibus ornare. Varius vel pharetra vel
-                    turpis nunc eget lorem dolor?<button class="arrow arrow-down"></button></p>
+            <button class="faq-accordion"><i class="fa fa-question-circle-o"></i>Tortor vitae purus faucibus ornare.
+                vel pharetra velturpis nunc eget lorem dolor?</button>
+            <div class="faq-panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod te ut labore</p>
             </div>
         </div>
     </section>
     <!--contact section -->
-    <section class="bgwhite">
+    <section class="background-white">
         <h2>CONTACT</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus elus consequatur ex aliquid fuga enum quidem. Sit
             sint consectetur velit. Quisquam quos qulsquam cupiditate.</p>
@@ -356,13 +349,13 @@
             <div class="column-flex">
                 <ul>
                     <li><a href="#"><i class="fa fa-map-marker social-icon" aria-hidden="true"></i></a>
-                        <b>Location:</b><span class="blue-text">A108 Adam Street, New York, NY 535022</span>
+                        <b>Location:</b><span class="contact-info">A108 Adam Street, New York, NY 535022</span>
                     </li>
                     <li><a href="#"><i class="fa fa-envelope social-icon" aria-hidden="true"></i></a>
-                        <b>Email:</b><span class="blue-text">info@example.com</span>
+                        <b>Email:</b><span class="contact-info">info@example.com</span>
                     </li>
                     <li><a href="#"><i class="fa fa-phone social-icon" aria-hidden="true"></i></a>
-                        <b>Call:</b><span class="blue-text">+1 5589 5548855</span>
+                        <b>Call:</b><span class="contact-info">+1 5589 5548855</span>
                     </li>
                 </ul>
             </div>
@@ -381,7 +374,7 @@
     <footer>
         <div class="footer-container ">
             <div class="footer-items">
-                <div class="large-text">OnePage</div>
+                <div class="footer-logo">OnePage</div>
                 <div>
                     <p>A108 Adam Street New York NY 535022 United States</p>
                     <p><b>Phone:</b>+155895548855 </p>
@@ -431,6 +424,7 @@
             </div>
         </div>
         <button id="top-btn" title="Go to top" onclick="topFunction()"><i class="fa fa-arrow-up"></i></button>
+        <script src="./js/navmenu.ts"></script>
         <script src="./js/mainjs.js"></script>
     </footer>
 </body>
