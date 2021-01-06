@@ -1,229 +1,229 @@
 /* navbar */
 .navbar {
-    background-color: white;
-    height: auto;
-    width: auto;
+  background-color: white;
+  height: auto;
+  width: auto;
 }
 
 .navbar  a {
-    color: #556270;
-    display: none;
-    font-size: 10px;
-    font-weight: lighter;
-    padding: 2px 8px;
-    text-decoration: none;
+  color: #556270;
+  display: none;
+  font-size: 10px;
+  font-weight: lighter;
+  padding: 2px 8px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #0000ff;
+  color: #0000ff;
 }
 
 .navbar a.active {
-    color: #0000ff;
+  color: #0000ff;
 }
 
 .navbar .menu-bar {
-    display: inline-block;
-    font-size: 12px;
-    padding-top: 5px;
+  display: inline-block;
+  font-size: 12px;
+  padding-top: 5px;
 } 
 
 .navbar  .nav-header {
-    display: inline;
-    padding-right: 20px;
+  display: inline;
+  padding-right: 20px;
 }
 
 .navbar  .nav-header  .nav-title {
-    color: #848b92;
-    display: inline;
-    font-size: 14px;
-    font-weight: lighter;
-    left: 0;
-    margin: auto;
-    padding: 5px 10px;
+  color: #848b92;
+  display: inline;
+  font-size: 14px;
+  font-weight: lighter;
+  left: 0;
+  margin: auto;
+  padding: 5px 10px;
 }
 
 .navbar a.button {
-    background-color:#0000ff;
-    border: none;
-    border-radius: 2.5px;
-    color: white;
-    cursor: pointer;
-    display: none;
-    float: right;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 5px; 
-    position: absolute;
+  background-color:#0000ff;
+  border: none;
+  border-radius: 2.5px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  float: right;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px; 
+  position: absolute;
 }
 
 /* navbar dropdown */
 .dropdown-content {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    display: none;
-    min-width: 160px;
-    position: absolute;
-    z-index: 1;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
 }
   
 .dropdown-content a {
-    color: #000;  
-    padding: 12px 16px;    
-    text-align: left;
-    text-decoration: none;  
+  color: #000;  
+  padding: 12px 16px;    
+  text-align: left;
+  text-decoration: none;  
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
   
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .navbar.responsive {
-    position: relative;
+  position: relative;
 }
 
 .navbar.responsive a.menu-bar {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .navbar.responsive a {
-    display:block;
-    right: 41%;
-    text-align: center;
-    top: 90%;
+  display:block;
+  right: 41%;
+  text-align: center;
+  top: 90%;
 }
 
 /* -----iPad view-----*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .navbar {
-        padding: 15px;
-        margin: 8px;
-    }
+  .navbar {
+    padding: 15px;
+    margin: 8px;
+  }
 
-    .navbar .nav-header .nav-title {
-        font-size: 30px;
-        padding-left: 5px;
-        padding-right: 0;
-    }
+  .navbar .nav-header .nav-title {
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 0;
+  }
 
-    .navbar  a {
-        display: inline-block;
-        font-size: 13px ;
-        padding: 15px 5px 5px;
-    }
+  .navbar  a {
+    display: inline-block;
+    font-size: 13px ;
+    padding: 15px 5px 5px;
+  }
 
-    .navbar .menu-bar {
-        display: none;
-    }
+  .navbar .menu-bar {
+    display: none;
+  }
 
-    .navbar a.button {
-        display: inline-block;
-        font-size: 13px;
-        margin-top: 6px;
-    }
+  .navbar a.button {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 6px;
+  }
 
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
 
-    .navbar {
-        padding: 15px;
-    }
+  .navbar {
+    padding: 15px;
+  }
 
-    .navbar .nav-header .nav-title {
-        font-size: 30px;
-        padding-left: 50px;
-        padding-right: 0;
-    }
+  .navbar .nav-header .nav-title {
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 0;
+  }
 
-    .navbar  a {
-        display: inline-block;
-        font-size: 13px ;
-        padding: 15px 10px 5px 12px;
-    }
+  .navbar  a {
+    display: inline-block;
+    font-size: 13px ;
+    padding: 15px 10px 5px 12px;
+  }
 
-    .navbar .menu-bar {
-        display: none;
-    }
+  .navbar .menu-bar {
+    display: none;
+  }
 
-    .navbar a.button {
-        display: inline-block;
-        font-size: 13px;
-        margin-top: 6px;
-        padding: 8px;
-    }
-          
+  .navbar a.button {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 6px;
+    padding: 8px;
+  }
+      
 }
 
 /* Laptop view */
 @media only screen and (min-width: 1280px) {
 
-    .navbar {
-        padding: 20px;
-        text-align: left;
-    }
+  .navbar {
+    padding: 20px;
+    text-align: left;
+  }
 
-    .navbar .nav-header .nav-title {
-        font-size: 28px;
-        font-weight: 700;
-        margin-left: 148px;
-    }
-      
-    .navbar  a {
-        display: inline-block;
-        font-size: 15px ;
-        padding: 10px;
-    }
+  .navbar .nav-header .nav-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 148px;
+  }
+    
+  .navbar  a {
+    display: inline-block;
+    font-size: 15px ;
+    padding: 10px;
+  }
 
-    .navbar .menu-bar {
-        display: none;
-    }
+  .navbar .menu-bar {
+    display: none;
+  }
 
-    .navbar a.button {
-        display: inline-block;
-        font-size: 15px;
-        margin-left: 60px;
-        margin-top: 5px;
-        padding: 5px;
-    }
+  .navbar a.button {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: 5px;
+    padding: 5px;
+  }
 
 }
 
 @media only screen and (min-width: 1400px) {
 
-    .navbar {
-        padding: 20px;
-        text-align: left;
-    }
+  .navbar {
+    padding: 20px;
+    text-align: left;
+  }
 
-    .navbar .nav-header .nav-title {
-        font-size: 28px;
-        font-weight: lighter;
-        margin-left: 148px;
-    }
+  .navbar .nav-header .nav-title {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-left: 148px;
+  }
 
-    .navbar  a {
-        display: inline-block;
-        font-size: 15px ;
-        padding: 10px;
-    }
+  .navbar  a {
+    display: inline-block;
+    font-size: 15px ;
+    padding: 10px;
+  }
 
-    .navbar .menu-bar {
-        display: none;
-    }
+  .navbar .menu-bar {
+    display: none;
+  }
 
-    .navbar a.button {
-        display: inline-block;
-        font-size: 15px;
-        margin-left: 275px;
-        margin-top: 5px;
-        padding: 10px 30px;
-    }
-      
+  .navbar a.button {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 275px;
+    margin-top: 5px;
+    padding: 10px 30px;
+  }
+    
 }  

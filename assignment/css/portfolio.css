@@ -1,45 +1,45 @@
 /* portfolio css */
 .content-button {
-    background-color: #fff;
-    border: none;
-    color: #000000;
+  background-color: #fff;
+  border: none;
+  color: #000000;
 }
 
 .content-button:hover {
-    background-color: #fff;
-    color: #0000ff;
+  background-color: #fff;
+  color: #0000ff;
 }
 
 /* portpolio image grid */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: auto; 
 }
   
 .portfolio-img {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
 .portfolio-img img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
   
 /* for screen below or equal to 480px */
 @media screen and (max-width: 480px) {
 
-    .gallery {
-        margin-left: auto;
-    }
+  .gallery {
+  margin-left: auto;
+  }
 
-    .portfolio-img {
-        flex: 100%;
-        max-width: 100%;
-    }
-    
+  .portfolio-img {
+  flex: 100%;
+  max-width: 100%;
+  }
+  
 }
