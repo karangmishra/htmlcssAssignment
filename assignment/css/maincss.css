@@ -232,7 +232,8 @@ button:hover {
   background-color: rgb(205, 236, 248);
   color: #000;
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 0;    
+  margin: 0; 
+  margin-bottom: 3%;   
 }
 
 /* for action section */
@@ -329,11 +330,20 @@ button:hover {
 }
 
 /* contact us */
+.contact {
+  margin: 10% 16%;
+}
+@media only screen and (min-width:480px) and (max-width: 720px) {
+ 
+  .contact {
+    margin: auto;
+  }
+}
 .contact-info {
   color: #00f;
   display: block;
-  font-size: small;
-  padding: 4px 30px;
+  font-size: 14px;
+  padding: 2px 30px;
 }
 
 #google-img {
@@ -404,7 +414,17 @@ text {
   display: flex;
   font-size: small;  
   flex-wrap: wrap;
+  margin: 2% 8%;
   padding-bottom: 30px;
+}
+
+/*footer for screen resolution where screen width is between 480px-720px*/
+@media only screen and (min-width:480px) and (max-width: 720px) {
+ 
+  .footer-container {
+    margin: 2% 4%;
+  }
+
 }
 
 .footer-items {
@@ -420,7 +440,19 @@ text {
 }
 
 .footer-logo {
-  font-size: large;
+  font-size: medium;
+  padding-left: 2%;
+}
+
+.footer-address p{
+  font-size: small;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.footer-sociallogo {
+  flex-wrap: nowrap;
+  text-align: end;
 }
 
 /* arrow sign (>) */ 

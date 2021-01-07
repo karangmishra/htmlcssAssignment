@@ -15,13 +15,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 100px;
-  margin-right: auto; 
+  margin-right: auto;
 }
   
 .portfolio-img {
+  display: none;
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 1%;
 }
 
 .portfolio-img img {
@@ -29,17 +30,27 @@
   vertical-align: middle;
   width: 100%;
 }
+
+/* The "show" class is added to the filtered images */
+.show {
+  display: block;
+}
   
 /* for screen below or equal to 480px */
 @media screen and (max-width: 480px) {
 
   .gallery {
-  margin-left: auto;
+    margin-left: auto;
   }
 
   .portfolio-img {
-  flex: 100%;
-  max-width: 100%;
+    display: none;
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+  .show {
+    display: block;
   }
   
 }
