@@ -1,10 +1,12 @@
 @import url('./navbar.css');
 @import url('./portfolio.css');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Castoro&family=Vollkorn:ital@0;1&display=swap');
 
 body {
   background-color: rgb(245, 245, 245);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Vollkorn', Helvetica, sans-serif;
   margin: 0 16px;
   text-align: center;
 }
@@ -100,6 +102,8 @@ section {
   padding: 10px 20px;
 }
 
+
+
 .primarybutton {
   background-color: #00f;
   border: 0;
@@ -157,6 +161,7 @@ button:hover {
 
 .column-flex {
   flex: 50%;
+  font-family: Arial, sans-serif;
   padding: 10px;
   text-align: justify; 
 }
@@ -198,6 +203,7 @@ button:hover {
   background-color: rgb(240, 255, 240);
   display: flex;
   flex-flow: wrap;
+  font-family: 'Abhaya Libre', serif;
   font-weight: bold;
   justify-content: space-around;
 }
@@ -259,6 +265,7 @@ button:hover {
 .services,
 .footer {
   background-color:  rgba(248, 253, 255, 0.658);
+  font-family: 'Abhaya Libre', serif;
   padding-top: 2%;
 }
 
@@ -449,6 +456,7 @@ text {
 @media only screen and (min-width:480px) and (max-width: 720px) {
  
   .footer-container {
+    font-family: 'Vollkorn', serif;
     margin: auto;
   }
 
@@ -457,12 +465,14 @@ text {
 .footer-items {
   display: block;
   flex: 25%;
+  font-family: 'Abhaya Libre', serif;
   font-weight: lighter;
   padding: 5px;
   text-align: justify; 
 }
 
 .footer-items li {
+  display: inline-flexbox;
   padding-bottom: 10%;
 }
 
@@ -473,6 +483,7 @@ text {
 
 .footer-address p{
   font-size: small;
+ 
   margin-right: 20px;
   text-align: left;
 }
@@ -486,10 +497,10 @@ text {
 .arrow {
   align-content: center;
   border: solid rgb(0, 0, 255);
-  border-width: 0 2px 2px 0;
+  border-width: 0 1px 1px 0;
   display: inline-block;
   margin: 3px;  
-  padding: 2px;     
+  padding: 1px;     
 }
 
 .arrow-right {
