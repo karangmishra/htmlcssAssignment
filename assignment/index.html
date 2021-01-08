@@ -25,8 +25,7 @@
         <a href="#team">Team</a>
         <a href="#pricing">Pricing</a>
         <a class="dropdown">Drop Down <i class="fa fa-caret-down"></i>
-          <span class="dropdown-content">Newsletter</span>
-        </a>
+          <span class="dropdown-content">Newsletter</span></a>
         <a href="#contact">Contact</a>
         <a class="button">Get Strated</a>
         <a href="#"></a>
@@ -70,9 +69,17 @@
       <div class="column-flex">
         <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do elusmod tempor incididunt ut labore et
           dolore magna aliqua.</p>
-        <p><i class="material-icons">done_all</i>laboris nisi ut aliquip ex ea commodo consequat</p>
-        <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
-        <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
+        <ul>
+          <li>
+            <p><i class="material-icons">done_all</i>laboris nisi ut aliquip ex ea commodo consequat</p>
+          </li>
+          <li>
+            <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
+          </li>
+          <li>
+            <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
+          </li>
+        </ul>
       </div>
       <div class="column-flex">
         <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -98,12 +105,22 @@
       <div class="column-flex">
         <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do elusmod tempor incididunt ut labore et
           dolore magna aliqua.</p>
-        <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea</p>
-        <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
-        <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
-        <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit. in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <ul>
+          <li>
+            <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea</p>
+          </li>
+          <li>
+            <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
+          </li>
+          <li>
+            <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
+          </li>
+          <li>
+            <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit. in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          </li>
+        </ul>
         <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
           voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
           non sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -120,7 +137,7 @@
     </div>
   </section>
   <!--testimonial carousel section-->
-  <section>
+  <section class="background-white">
     <h2>TESTIMONIALS</h2>
     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
       consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
@@ -189,7 +206,7 @@
     </div>
   </section>
   <!--services section-->
-  <section>
+  <section class="services">
     <h2>SERVICES</h2>
     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
       sintconsectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
@@ -251,23 +268,69 @@
     <!-- photo gallery -->
     <div class="gallery">
       <div class="portfolio-img card">
-        <img src="./assets/portfolio-1.jpg" alt="curology portfolio-1">
-        <img src="./assets/portfolio-6.jpg" alt="table portfolio-6">
+        <img src="./assets/portfolio-1.jpg" onclick="openModal();currentSlide(1)" alt="curology portfolio-1">
+        <img src="./assets/portfolio-6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"
+          alt="table portfolio-6">
       </div>
       <div class="portfolio-img app">
-        <img src="./assets/portfolio-2.jpg" alt="cofee-cup portfolio-2">
-        <img src="./assets/portfolio-5.jpg" alt="lamp portfolio-5">
-        <img src="./assets/portfolio-9.jpg" alt="wrist-watch portfolio-9">
+        <img src="./assets/portfolio-2.jpg" onclick="openModal();currentSlide(2)" alt="cofee-cup portfolio-2">
+        <img src="./assets/portfolio-5.jpg" onclick="openModal();currentSlide(5)" alt="lamp portfolio-5">
+        <img src="./assets/portfolio-9.jpg" onclick="openModal();currentSlide(9)" alt="wrist-watch portfolio-9">
       </div>
       <div class="portfolio-img web">
-        <img src="./assets/portfolio-3.jpg" alt="small-plant portfolio-3">
-        <img src="./assets/portfolio-4.jpg" alt="sunglasses portfolio-4">
-        <img src="./assets/portfolio-7.jpg" alt="camera-lense portfolio-7">
-        <img src="./assets/portfolio-8.jpg" alt="glass portfolio-8">
+        <img src="./assets/portfolio-3.jpg" onclick="openModal();currentSlide(3)" alt="small-plant portfolio-3">
+        <img src="./assets/portfolio-4.jpg" onclick="openModal();currentSlide(4)" alt="sunglasses portfolio-4">
+        <img src="./assets/portfolio-7.jpg" onclick="openModal();currentSlide(7)" alt="camera-lense portfolio-7">
+        <img src="./assets/portfolio-8.jpg" onclick="openModal();currentSlide(8)" alt="glass portfolio-8">
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 9</div>
+            <img src="./assets/portfolio-1.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 9</div>
+            <img src="./assets/portfolio-2.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 9</div>
+            <img src="./assets/portfolio-3.jpg">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 9</div>
+            <img src="./assets/portfolio-4.jpg">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 9</div>
+            <img src="./assets/portfolio-5.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 9</div>
+            <img src="./assets/portfolio-6.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 9</div>
+            <img src="./assets/portfolio-7.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 9</div>
+            <img src="./assets/portfolio-8.jpg">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 9</div>
+            <img src="./assets/portfolio-9.jpg">
+          </div>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">‹</a>
+          <a class="next" onclick="plusSlides(1)">›</a>
+        </div>
       </div>
     </div>
   </section>
-
   <!--team members section-->
   <section>
     <h2>TEAM</h2>
@@ -298,7 +361,7 @@
     </div>
   </section>
   <!--pricing section-->
-  <section>
+  <section class="pricing">
     <h2>PRICING</h2>
     <p>Magnam dolores commodi suscipit. Necessitatibus elus consequatur ex aliquid fuga enum quidem. Sit sint
       consectetur velit. Quisquam quos qulsquam cupiditate.</p>
@@ -390,7 +453,7 @@
     </div>
   </section>
   <!--footer section-->
-  <footer>
+  <footer class="footer">
     <div class="footer-container ">
       <div class="footer-items">
         <div class="footer-logo">OnePage</div>

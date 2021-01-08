@@ -77,8 +77,13 @@ p {
   padding-left: 2px;
 }
 
+p i {
+  display: inline;
+}
+
 section {
   background-color: rgb(245, 245, 245);
+  padding: 2%;
 }
 
 * {
@@ -240,7 +245,7 @@ button:hover {
 .background-cyan {
   background-color: rgb(0, 139, 139);
   color: #fff;
-  padding: 30px;
+  padding: .8%;
 }
  
 /* for team section */
@@ -249,7 +254,18 @@ button:hover {
   padding: 0;
 }
 
-/* pricing */
+/* pricing services footer background*/
+.pricing,
+.services,
+.footer {
+  background-color:  rgba(248, 253, 255, 0.658);
+  padding-top: 2%;
+}
+
+.pricing h5 {
+  padding-top: 5%;
+}
+
 .flex-container1 {
   align-content: flex-end;
   display: flex;
@@ -328,6 +344,11 @@ button:hover {
 #carousel-2:checked ~ .control-2 {
   display: block;
 }
+@media only screen and  (max-width: 720px) {
+  label {
+    visibility: hidden;
+  }
+}
 
 /* contact us */
 .contact {
@@ -338,7 +359,9 @@ button:hover {
   .contact {
     margin: auto;
   }
+
 }
+
 .contact-info {
   color: #00f;
   display: block;
@@ -410,7 +433,7 @@ text {
   
 /* footer column separation */
 .footer-container {
-  background-color: rgb(247, 247, 247);
+  background-color:  rgba(248, 253, 255, 0.658);
   display: flex;
   font-size: small;  
   flex-wrap: wrap;
@@ -422,7 +445,7 @@ text {
 @media only screen and (min-width:480px) and (max-width: 720px) {
  
   .footer-container {
-    margin: 2% 4%;
+    margin: auto;
   }
 
 }
@@ -431,12 +454,12 @@ text {
   display: block;
   flex: 25%;
   font-weight: lighter;
-  padding: 5px 10px 15px 20px;
+  padding: 5px;
   text-align: justify; 
 }
 
 .footer-items li {
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
 .footer-logo {
