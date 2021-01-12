@@ -86,9 +86,10 @@ section {
   .navbar a.active {
     color: #00f; }
   .navbar .menu-bar {
-    display: inline-block;
+    display: block;
     font-size: 12px;
-    padding-top: 5px; }
+    padding-top: 5px;
+    float: right; }
   .navbar .nav-header {
     display: inline;
     padding-right: 20px; }
