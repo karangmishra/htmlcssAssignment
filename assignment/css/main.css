@@ -15,6 +15,18 @@ body {
   top: 0;
   width: 100%; }
 
+@media only screen and (max-width: 1080px) {
+  body {
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 2px;
+    padding: 4px;
+    width: 100%; }
+
+  #background-image {
+    align-self: center;
+    height: 70%;
+    width: 100%; } }
 .background-white {
   background-color: #fff; }
 
@@ -32,17 +44,17 @@ h6 {
   margin: 5px; }
 
 i {
-  margin-right: 6px;
-  margin-left: 8px; }
+  margin-left: 8px;
+  margin-right: 6px; }
 
 img {
   margin-top: 0; }
 
 li {
+  display: inline;
   list-style: none; }
 
 p {
-  display: block;
   font-size: 16px;
   margin-left: 4px;
   padding-left: 2px; }
@@ -70,9 +82,9 @@ section {
     padding: 2px 8px;
     text-decoration: none; }
     .navbar a:hover {
-      color: #0000ff; }
+      color: #00f; }
   .navbar a.active {
-    color: #0000ff; }
+    color: #00f; }
   .navbar .menu-bar {
     display: inline-block;
     font-size: 12px;
@@ -89,7 +101,7 @@ section {
       margin: auto;
       padding: 5px 10px; }
   .navbar a.button {
-    background-color: #0000ff;
+    background-color: #00f;
     border: none;
     border-radius: 2.5px;
     color: #fff;
@@ -233,12 +245,12 @@ section {
 .primarybutton {
   background-color: #00f;
   border: 0;
-  border-radius: 4px;
+  border-radius: 2.5px;
   color: #fff;
   display: inline;
   font-family: 'SegoeUI SemiBold';
   font-size: 16px;
-  padding: 5px;
+  padding: 12px 20px;
   text-align: center; }
 
 button:hover {
@@ -270,6 +282,11 @@ button:hover {
   padding-left: 10px;
   text-align: left; }
 
+.material-icons {
+  color: #72deecd2;
+  display: inline;
+  font-size: 24px; }
+
 /* about us 2 column separation */
 .row-flex {
   display: flex;
@@ -296,6 +313,12 @@ button:hover {
   padding-left: 10%;
   width: 600px; }
 
+@media screen and (max-width: 720px) {
+  #video-play {
+    height: 240px;
+    margin: 0;
+    padding: 0;
+    width: 360px; } }
 /* number of client,projects,awards section container */
 .flex-count-container {
   background-color: #f0fff0;
@@ -315,7 +338,8 @@ button:hover {
   background-color: #f0fff0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding: 2%; }
   .flex-clientlogo-container img {
     filter: grayscale(100%);
     font-size: 30px;
@@ -323,6 +347,9 @@ button:hover {
     text-align: center;
     width: 100px; }
 
+@media screen and (max-width: 720px) {
+  .flex-clientlogo-container {
+    flex: auto; } }
 .price {
   display: inline-block;
   font-size: xx-large;
@@ -349,7 +376,7 @@ button:hover {
   color: #000; }
   .content-button:hover {
     background-color: #fff;
-    color: #0000ff; }
+    color: #00f; }
 
 /* portpolio image grid */
 .gallery {
@@ -376,8 +403,8 @@ button:hover {
   padding: 1%; }
   .portfolio-img img {
     margin-top: 8px;
-    vertical-align: middle;
-    width: 100%; }
+    max-width: 100%;
+    vertical-align: middle; }
 
 /* The "show" class is added to the filtered images */
 .show {
@@ -389,7 +416,7 @@ button:hover {
   font-size: 35px;
   font-weight: bold;
   position: relative;
-  right: 25px;
+  right: 10px;
   top: 10px; }
   .close:focus {
     color: #999;
@@ -422,7 +449,7 @@ button:hover {
   .modal {
     background-color: #000;
     display: none;
-    height: auto;
+    height: 100%;
     overflow: auto;
     position: fixed;
     top: 0;
@@ -432,10 +459,10 @@ button:hover {
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    padding: 0;
-    position: initial;
     max-height: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    padding: 0;
+    position: initial; }
 
   /* Hide the slides by default */
   .mySlides {
@@ -445,38 +472,34 @@ button:hover {
   .next {
     background-color: #add;
     border-radius: 0 3px 3px 0;
-    color: #000ff0;
+    color: #00f;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    margin-top: -50px;
     padding: 16px;
     position: absolute;
+    right: 0;
     top: 50%;
     transition: 0.6s ease;
     width: auto;
-    user-select: none;
-    border-radius: 3px 0 0 3px;
-    right: 0; }
+    user-select: none; }
     .next:hover {
       background-color: rgba(0, 0, 0, 0.8); }
 
   .prev {
     background-color: #add;
     border-radius: 0 3px 3px 0;
-    color: #000ff0;
+    color: #00f;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    margin-top: -50px;
     padding: 16px;
     position: absolute;
+    left: 0;
     top: 50%;
     transition: 0.6s ease;
     width: auto;
-    user-select: none;
-    border-radius: 3px 0 0 3px;
-    left: 0; }
+    user-select: none; }
     .prev:hover {
       background-color: rgba(0, 0, 0, 0.8); }
 
@@ -488,20 +511,7 @@ button:hover {
     position: absolute;
     top: 0; }
 
-  /* Caption text */
-  .caption-container {
-    background-color: #000;
-    color: #fff;
-    padding: 2px 16px;
-    text-align: center; }
-
-  img.demo {
-    opacity: 0.6; }
-
   .active {
-    opacity: 1; }
-
-  .demo:hover {
     opacity: 1; }
 
   img.hover-shadow {
@@ -602,10 +612,16 @@ button:hover {
 #carousel-2:checked ~ .control-2 {
   display: block; }
 
+@media only screen and (max-width: 720px) {
+  label {
+    visibility: hidden; } }
 /* contact us */
 .contact {
   margin: 10% 16%; }
 
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  .contact {
+    margin: auto; } }
 .contact-info {
   color: #00f;
   display: block;
@@ -685,6 +701,10 @@ text {
   margin: 2% 8%;
   padding-bottom: 30px; }
 
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  .footer-container {
+    font-family: 'Vollkorn', serif;
+    margin: auto; } }
 .footer-items {
   display: block;
   flex: 25%;
@@ -693,8 +713,10 @@ text {
   padding: 5px;
   text-align: justify; }
   .footer-items li {
-    display: inline-flexbox;
+    display: block;
     padding-bottom: 10%; }
+    .footer-items li i {
+      margin-right: 4%; }
 
 .footer-logo {
   font-size: 160%;
@@ -711,7 +733,7 @@ text {
 /* arrow sign (>) */
 .arrow {
   align-content: center;
-  border: solid blue;
+  border: solid #00f;
   border-width: 0 1px 1px 0;
   display: inline-block;
   margin: 3px;
@@ -753,37 +775,5 @@ text {
   z-index: 99; }
   #top-btn:hover {
     background-color: #ff000f; }
-
-@media only screen and (max-width: 1080px) {
-  body {
-    flex-wrap: wrap;
-    height: 100%;
-    margin-top: 2px;
-    padding: 4px;
-    width: 100%; }
-
-  #background-image {
-    align-self: center;
-    height: 70%;
-    width: 100%; } }
-@media screen and (max-width: 720px) {
-  #video-play {
-    height: 240px;
-    margin: 0;
-    padding: 0;
-    width: 360px; } }
-@media screen and (max-width: 620px) {
-  .flex-clientlogo-container {
-    flex: auto; } }
-@media only screen and (max-width: 720px) {
-  label {
-    visibility: hidden; } }
-@media only screen and (min-width: 480px) and (max-width: 720px) {
-  .contact {
-    margin: auto; }
-
-  .footer-container {
-    font-family: 'Vollkorn', serif;
-    margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -23,6 +23,22 @@ body {
 	width: 100%;
 }
 
+@media only screen and (max-width: 1080px) {
+	body {
+		flex-wrap: wrap;
+		height: 100%;
+		margin-top: 2px;
+		padding: 4px;
+		width: 100%;
+  }
+  
+	#background-image {
+		align-self: center;
+		height: 70%;
+		width: 100%;
+	}
+}
+
 .background-white {
 	background-color: $white-color;
 }
@@ -44,8 +60,8 @@ h6 {
 }
 
 i {
-	margin-right: 6px;
 	margin-left: 8px;
+	margin-right: 6px;
 }
 
 img {
@@ -53,11 +69,11 @@ img {
 }
 
 li {
+	display: inline;
 	list-style: none;
 }
 
 p {
-	display: block;
 	font-size: 16px;
 	margin-left: 4px;
 	padding-left: 2px;
@@ -89,11 +105,11 @@ section {
 		padding: 2px 8px;
 		text-decoration: none;
 		&:hover {
-			color: #0000ff;
+			color: $blue-color;
 		}
 	}
 	a.active {
-		color: #0000ff;
+		color: $blue-color;
 	}
 	.menu-bar {
 		display: inline-block;
@@ -114,7 +130,7 @@ section {
 		}
 	}
 	a.button {
-		background-color: #0000ff;
+		background-color: $blue-color;
 		border: none;
 		border-radius: 2.5px;
 		color: $white-color;
@@ -310,12 +326,12 @@ section {
 .primarybutton {
 	background-color: $blue-color;
 	border: 0;
-	border-radius: 4px;
+	border-radius: 2.5px;
 	color: $white-color;
 	display: inline;
 	font-family: 'SegoeUI SemiBold';
 	font-size: 16px;
-	padding: 5px;
+	padding: 12px 20px;
 	text-align: center;
 }
 
@@ -355,6 +371,12 @@ button {
 	text-align: left;
 }
 
+.material-icons { 
+	color: #72deecd2;
+	display: inline;
+	font-size: 24px;
+}
+
 /* about us 2 column separation */
 .row-flex {
 	display: flex;
@@ -387,6 +409,15 @@ button {
 	width: 600px;
 }
 
+@media screen and (max-width: 720px) {
+	#video-play {
+		height: 240px;
+		margin: 0;
+		padding: 0;
+		width: 360px;
+	}
+}
+
 /* number of client,projects,awards section container */
 .flex-count-container {
 	background-color: #f0fff0;
@@ -409,6 +440,7 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	padding: 2%;
 	img {
 		filter: grayscale(100%);
 		font-size: 30px;
@@ -417,6 +449,13 @@ button {
 		width: 100px;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.flex-clientlogo-container {
+		flex: auto;
+	}
+}
+
 
 .price {
 	display: inline-block;
@@ -447,7 +486,7 @@ button {
 	color: $black-color;
 	&:hover {
 		background-color: $white-color;
-		color: #0000ff;
+		color: $blue-color;
 	}
 }
 
@@ -478,8 +517,8 @@ button {
 	padding: 1%;
 	img {
 		margin-top: 8px;
+		max-width: 100%;
 		vertical-align: middle;
-		width: 100%;
 	}
 }
 
@@ -494,7 +533,7 @@ button {
 	font-size: 35px;
 	font-weight: bold;
 	position: relative;
-	right: 25px;
+	right: 10px;
 	top: 10px;
 	&:focus {
 		color: #999;
@@ -538,7 +577,7 @@ button {
 	.modal {
 		background-color: $black-color;
 		display: none;
-		height: auto;
+		height: 100%;
 		overflow: auto;
 		position: fixed;
 		top: 0;
@@ -549,10 +588,10 @@ button {
   /* Modal Content */
 	.modal-content {
 		background-color: #fefefe;
-		padding: 0;
-		position: initial;
 		max-height: 50%;
 		max-width: 50%;
+		padding: 0;
+		position: initial;
   }
 
   /* Hide the slides by default */
@@ -564,19 +603,17 @@ button {
 	.next {
 		background-color: #add;
 		border-radius: 0 3px 3px 0;
-		color: #000ff0;
+	  color: $blue-color;
 		cursor: pointer;
 		font-size: 20px;
 		font-weight: bold;
-		margin-top: -50px;
 		padding: 16px;
 		position: absolute;
+		right: 0;
 		top: 50%;
 		transition: 0.6s ease;
 		width: auto;
 		user-select: none;
-		border-radius: 3px 0 0 3px;
-		right: 0;
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.8);
 		}
@@ -585,19 +622,17 @@ button {
 	.prev {
 		background-color: #add;
 		border-radius: 0 3px 3px 0;
-		color: #000ff0;
+		color: $blue-color;
 		cursor: pointer;
 		font-size: 20px;
 		font-weight: bold;
-		margin-top: -50px;
 		padding: 16px;
 		position: absolute;
+		left: 0;
 		top: 50%;
 		transition: 0.6s ease;
 		width: auto;
 		user-select: none;
-		border-radius: 3px 0 0 3px;
-		left: 0;
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.8);
 		}
@@ -610,28 +645,10 @@ button {
 		padding: 8px 12px;
 		position: absolute;
 		top: 0;
-  }
-
-  /* Caption text */
-	.caption-container {
-		background-color: $black-color;
-		color: $white-color;
-		padding: 2px 16px;
-		text-align: center;
-  }
-  
-	img.demo {
-		opacity: 0.6;
-  }
-  
+	}
+	
 	.active {
 		opacity: 1;
-  }
-  
-	.demo {
-		&:hover {
-			opacity: 1;
-		}
   }
   
 	img.hover-shadow {
@@ -776,9 +793,21 @@ button {
 	}
 }
 
+@media only screen and (max-width: 720px) {
+	label {
+		visibility: hidden;
+	}
+}
+
 /* contact us */
 .contact {
 	margin: 10% 16%;
+}
+
+@media only screen and (min-width:480px) and (max-width: 720px) {
+	.contact {
+		margin: auto;
+	}
 }
 
 .contact-info {
@@ -875,6 +904,13 @@ text {
 	padding-bottom: 30px;
 }
 
+@media only screen and (min-width:480px) and (max-width: 720px) {
+	.footer-container {
+		font-family: 'Vollkorn', serif;
+		margin: auto;
+	}
+}
+
 .footer-items {
 	display: block;
 	flex: 25%;
@@ -883,8 +919,11 @@ text {
 	padding: 5px;
 	text-align: justify;
 	li {
-		display: inline-flexbox;
+		display: block;
 		padding-bottom: 10%;
+		i {
+			margin-right: 4%;
+		}
 	}
 }
 
@@ -908,7 +947,7 @@ text {
 /* arrow sign (>) */ 
 .arrow {
 	align-content: center;
-	border: solid rgb(0, 0, 255);
+	border: solid $blue-color;
 	border-width: 0 1px 1px 0;
 	display: inline-block;
 	margin: 3px;
@@ -958,50 +997,9 @@ text {
 	}
 }
 
-@media only screen and (max-width: 1080px) {
-	body {
-		flex-wrap: wrap;
-		height: 100%;
-		margin-top: 2px;
-		padding: 4px;
-		width: 100%;
-  }
-  
-	#background-image {
-		align-self: center;
-		height: 70%;
-		width: 100%;
-	}
-}
 
-@media screen and (max-width: 720px) {
-	#video-play {
-		height: 240px;
-		margin: 0;
-		padding: 0;
-		width: 360px;
-	}
-}
 
-@media screen and (max-width: 620px) {
-	.flex-clientlogo-container {
-		flex: auto;
-	}
-}
 
-@media only screen and (max-width: 720px) {
-	label {
-		visibility: hidden;
-	}
-}
 
-@media only screen and (min-width:480px) and (max-width: 720px) {
-	.contact {
-		margin: auto;
-  }
-  
-	.footer-container {
-		font-family: 'Vollkorn', serif;
-		margin: auto;
-	}
-}
+
+
