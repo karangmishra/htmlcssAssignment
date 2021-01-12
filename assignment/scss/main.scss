@@ -10,33 +10,17 @@ $white-color: #fff;
 body {
 	background-color: $rgb245;
 	font-family: 'Vollkorn', Helvetica, sans-serif;
-	margin: 0 16px;
+	margin: 0;
 	text-align: center;
 }
 
 #background-image {
-	background-image: url(../assets/hero-bg.jpg);
+	background: linear-gradient( #faf9f9f8, rgba(255, 251, 251, 0.74) ), url(../assets/hero-bg.jpg);
 	height: 460px;
 	margin: 0;
 	padding: 0;
 	top: 0;
 	width: 100%;
-}
-
-@media only screen and (max-width: 1080px) {
-	body {
-		flex-wrap: wrap;
-		height: 100%;
-		margin-top: 2px;
-		padding: 4px;
-		width: 100%;
-  }
-  
-	#background-image {
-		align-self: center;
-		height: 70%;
-		width: 100%;
-	}
 }
 
 .background-white {
@@ -69,7 +53,7 @@ img {
 }
 
 li {
-	display: inline;
+	display: block;
 	list-style: none;
 }
 
@@ -77,9 +61,10 @@ p {
 	font-size: 16px;
 	margin-left: 4px;
 	padding-left: 2px;
+	
 	i {
-    display: inline;
-    margin-bottom:0;
+		display: inline;
+		margin-left: 0;
 	}
 }
 
@@ -92,25 +77,35 @@ section {
 	box-sizing: border-box;
 }
 
+#active {
+	background-color: #55acee;
+	color: $white-color;
+}
+
 /* navbar section */
 .navbar {
 	background-color: $white-color;
 	height: auto;
 	width: auto;
+	
 	a {
 		color: #556270;
 		display: none;
 		font-size: 10px;
 		font-weight: lighter;
 		padding: 2px 8px;
+		right: auto;
 		text-decoration: none;
+		
 		&:hover {
 			color: $blue-color;
 		}
 	}
-	a.active {
+
+	.active {
 		color: $blue-color;
 	}
+	
 	.menu-bar {
 		display: block;
 		font-size: 12px;
@@ -121,6 +116,7 @@ section {
 	.nav-header {
 		display: inline;
 		padding-right: 20px;
+		
 		.nav-title {
 			color: #848b92;
 			display: inline;
@@ -131,7 +127,8 @@ section {
 			padding: 5px 10px;
 		}
 	}
-	a.button {
+	
+	.button {
 		background-color: $blue-color;
 		border: none;
 		border-radius: 2.5px;
@@ -144,20 +141,24 @@ section {
 		padding: 5px;
 		position: absolute;
 	}
+
 }
 
 /* navbar dropdown */
 .dropdown-content {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	display: none;
+	margin-left: 2%;
 	min-width: 100px;
 	padding-top: .5%;
 	position: static;
 	z-index: 1;
+
 	a {
 		color: $black-color;
 		text-align: right;
 		text-decoration: none;
+
 		&:hover {
 			background-color: #f1f1f1;
 		}
@@ -174,144 +175,18 @@ section {
 
 .navbar.responsive {
 	position: relative;
-	a.menu-bar {
+
+	.menu-bar {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
+
 	a {
 		display: block;
 		right: 41%;
 		text-align: center;
 		top: 90%;
-	}
-}
-
-/* -----iPad view-----*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.navbar {
-		padding: 15px;
-		margin: 8px;
-		.nav-header {
-			.nav-title {
-				font-size: 30px;
-				padding-left: 5px;
-				padding-right: 0;
-			}
-		}
-		a {
-			display: inline-block;
-			font-size: 13px;
-			padding: 15px 5px 5px;
-		}
-		.menu-bar {
-			display: none;
-		}
-		a.button {
-			display: inline-block;
-			font-size: 13px;
-			margin-top: 6px;
-		}
-	}
-	.dropdown-content {
-		position: absolute;
-	}
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
-	.navbar {
-		padding: 15px;
-		.nav-header {
-			.nav-title {
-				font-size: 30px;
-				padding-left: 50px;
-				padding-right: 0;
-			}
-		}
-		a {
-			display: inline-block;
-			font-size: 13px;
-			padding: 15px 10px 5px 12px;
-		}
-		.menu-bar {
-			display: none;
-		}
-		a.button {
-			display: inline-block;
-			font-size: 13px;
-			margin-top: 6px;
-			padding: 8px;
-		}
-	}
-	.dropdown-content {
-		position: absolute;
-	}
-}
-
-/* Laptop view */
-@media only screen and (min-width: 1280px) {
-	.navbar {
-		padding: 20px;
-		text-align: left;
-		.nav-header {
-			.nav-title {
-				font-size: 28px;
-				font-weight: 700;
-				margin-left: 148px;
-			}
-		}
-		a {
-			display: inline-block;
-			font-size: 15px;
-			padding: 10px;
-		}
-		.menu-bar {
-			display: none;
-		}
-		a.button {
-			display: inline-block;
-			font-size: 15px;
-			margin-left: 60px;
-			margin-top: 5px;
-			padding: 5px;
-		}
-	}
-
-	.dropdown-content {
-		position: absolute;
-	}
-}
-
-@media only screen and (min-width: 1400px) {
-	.navbar {
-		padding: 20px;
-		text-align: left;
-		.nav-header {
-			.nav-title {
-				font-size: 28px;
-				font-weight: lighter;
-				margin-left: 148px;
-			}
-		}
-		a {
-			display: inline-block;
-			font-size: 15px;
-			padding: 10px;
-		}
-		.menu-bar {
-			display: none;
-		}
-		a.button {
-			display: inline-block;
-			font-size: 15px;
-			margin-left: 275px;
-			margin-top: 5px;
-			padding: 10px 30px;
-		}
-	}
-	
-	.dropdown-content {
-		position: absolute;
 	}
 }
 
@@ -350,20 +225,18 @@ button {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 30px;
+
 	div {
 		background-color: $white-color;
 		border-radius: 10px;
 		border-width: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		box-sizing: border-box;
 		font-size: 20px;
-		height: 240px;
-		margin: 20px 0;
+		height: 230px;
+		margin: 10px 0;
 		padding-top: 40px;
 		width: 200px;
-	  &:hover {
-		  background-color: rgb(0, 139, 139);
-      color: $white-color;
-    }
 	}
 }
 
@@ -377,6 +250,7 @@ button {
 	color: #72deecd2;
 	display: inline;
 	font-size: 24px;
+	vertical-align: middle;
 }
 
 /* about us 2 column separation */
@@ -387,17 +261,21 @@ button {
 }
 
 .column-flex {
+	display: block;
 	flex: 50%;
 	font-family: 'Vollkorn', Helvetica, sans-serif;
-	padding: 10px;
+	margin: 0;
+	padding: 5px;
 	text-align: justify;
 }
 
 .frame {
 	position: relative;
+
 	img {
 		display: block;
 	}
+
 	.fa-play-circle {
 		bottom: 30%;
 		position: absolute;
@@ -411,16 +289,7 @@ button {
 	width: 600px;
 }
 
-@media screen and (max-width: 720px) {
-	#video-play {
-		height: 240px;
-		margin: 0;
-		padding: 0;
-		width: 360px;
-	}
-}
-
-/* number of client,projects,awards section container */
+/* number of client,projects, awards section container */
 .flex-count-container {
 	background-color: #f0fff0;
 	display: flex;
@@ -428,6 +297,7 @@ button {
 	font-family: 'Abhaya Libre', serif;
 	font-weight: bold;
 	justify-content: space-around;
+	padding: 0;
 }
 
 .countnumber {
@@ -442,7 +312,8 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	padding: 2%;
+	padding: 1.5%;
+
 	img {
 		filter: grayscale(100%);
 		font-size: 30px;
@@ -451,13 +322,6 @@ button {
 		width: 100px;
 	}
 }
-
-@media screen and (max-width: 720px) {
-	.flex-clientlogo-container {
-		flex: auto;
-	}
-}
-
 
 .price {
 	display: inline-block;
@@ -474,19 +338,25 @@ button {
 	margin-bottom: 3%;
 }
 
-.background-cyan {
+.sec-action {
 	background-color: #008b8b;
 	color: $white-color;
 	font-family: 'Vollkorn', Helvetica, sans-serif;
-	padding: .8%;
+	padding-bottom: 4%;
 }
 
 /* portfolio scss */
 .content-button {
 	background-color: $white-color;
-	border: none;
 	color: $black-color;
+	font-family: 'Vollkorn', Helvetica, sans-serif;
+
 	&:hover {
+		background-color: $white-color;
+		color: $blue-color;
+	}
+	
+	&:active {
 		background-color: $white-color;
 		color: $blue-color;
 	}
@@ -517,9 +387,11 @@ button {
 	flex: 25%;
 	max-width: 25%;
 	padding: 1%;
+
 	img {
 		margin-top: 8px;
 		max-width: 100%;
+		padding-bottom: 10%;
 		vertical-align: middle;
 	}
 }
@@ -537,130 +409,17 @@ button {
 	position: relative;
 	right: 10px;
 	top: 10px;
+
 	&:focus {
 		color: #999;
 		cursor: pointer;
 		text-decoration: none;
 	}
+
 	&:hover {
 		color: #999;
 		cursor: pointer;
 		text-decoration: none;
-	}
-}
-
-/* for screen below or equal to 480px */
-@media screen and (max-width: 480px) {
-	.gallery {
-		margin-left: auto;
-  }
-  
-	.portfolio-img {
-		display: none;
-		flex: 100%;
-		max-width: 100%;
-  }
-  
-	.show {
-		display: block;
-  }
-}
-
-@media screen and (min-width: 1080px) and (max-width: 2024px) {
-  .row {
-		&:after {
-			clear: both;
-			content: "";
-			display: table;
-		}
-  }
-  
-  /* The Modal (background) */
-	.modal {
-		background-color: $black-color;
-		display: none;
-		height: 100%;
-		overflow: auto;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 1;
-  }
-  
-  /* Modal Content */
-	.modal-content {
-		background-color: #fefefe;
-		max-height: 50%;
-		max-width: 50%;
-		padding: 0;
-		position: initial;
-  }
-
-  /* Hide the slides by default */
-	.mySlides {
-		display: none;
-  }
-  
-  /* Next & previous buttons */
-	.next {
-		background-color: #add;
-		border-radius: 0 3px 3px 0;
-	  color: $blue-color;
-		cursor: pointer;
-		font-size: 20px;
-		font-weight: bold;
-		padding: 16px;
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transition: 0.6s ease;
-		width: auto;
-		user-select: none;
-		&:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		}
-  }
-  
-	.prev {
-		background-color: #add;
-		border-radius: 0 3px 3px 0;
-		color: $blue-color;
-		cursor: pointer;
-		font-size: 20px;
-		font-weight: bold;
-		padding: 16px;
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transition: 0.6s ease;
-		width: auto;
-		user-select: none;
-		&:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		}
-  }
-  
-  /* Number text (1/9 etc) */
-	.numbertext {
-		color: #f2f2f2;
-		font-size: 18px;
-		padding: 8px 12px;
-		position: absolute;
-		top: 0;
-	}
-	
-	.active {
-		opacity: 1;
-  }
-  
-	img.hover-shadow {
-		transition: 0.3s;
-  }
-  
-	.hover-shadow {
-		&:hover {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		}
 	}
 }
 
@@ -675,17 +434,20 @@ button {
 /* pricing-section */
 .pricing {
 	background-color: #f8fdffa8;
-	font-family: 'Abhaya Libre', serif;
 	padding-top: 2%;
+
 	h5 {
 		padding-top: 5%;
+	}
+
+	div {
+			font-family: 'Abhaya Libre', serif;
 	}
 }
 
 /* services */
 .services {
 	background-color: #f8fdffa8;
-	font-family: 'Abhaya Libre', serif;
 	padding-top: 2%;
 }
 
@@ -702,6 +464,7 @@ button {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 20px 30px;
+
 	div {
 		background-color: $white-color;
 		border-radius: 10px;
@@ -713,15 +476,10 @@ button {
 		margin: 20px 0;
 		text-align: center;
 		width: 320px;
-	  &:hover {
-		background-color: rgb(0, 139, 139);
-		color: $white-color;
-    }
   }
 }
 
 /* testimonial carousal */
-
 .carousel {
 	margin: 30px;
 	position: relative;
@@ -795,27 +553,16 @@ button {
 	}
 }
 
-@media only screen and (max-width: 720px) {
-	label {
-		visibility: hidden;
-	}
-}
-
 /* contact us */
 .contact {
-	margin: 10% 16%;
-}
-
-@media only screen and (min-width:480px) and (max-width: 720px) {
-	.contact {
-		margin: auto;
-	}
+	margin: 8% 18%;
 }
 
 .contact-info {
 	color: $blue-color;
 	display: block;
 	font-size: 14px;
+	margin-left: 2%;
 	padding: 2px 30px;
 }
 
@@ -840,7 +587,7 @@ input {
 
 #message {
   height: 150px;
-  width: 90%; 
+  width: 100%; 
 }
 
 text {
@@ -863,6 +610,7 @@ text {
 	text-align: left;
 	transition: 0.4s;
 	width: 80%;
+
 	&:after {
 		color: $blue-color;
 		content: '+';
@@ -873,6 +621,8 @@ text {
 }
 
 .faq-active {
+	color: #00f;
+
 	&:after {
 		content: "-";
 	}
@@ -890,6 +640,7 @@ text {
 .faq-questions {
 	padding-left: 22%;
 	text-align: justify;
+
 	div {
 		background-color: $white-color;
 		margin-bottom: 1%;
@@ -903,14 +654,7 @@ text {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 2% 8%;
-	padding-bottom: 30px;
-}
-
-@media only screen and (min-width:480px) and (max-width: 720px) {
-	.footer-container {
-		font-family: 'Vollkorn', serif;
-		margin: auto;
-	}
+	padding-bottom: 25px;
 }
 
 .footer-items {
@@ -920,9 +664,11 @@ text {
 	font-weight: lighter;
 	padding: 5px;
 	text-align: justify;
+
 	li {
 		display: block;
-		padding-bottom: 10%;
+		padding-bottom: 4%;
+	
 		i {
 			margin-right: 4%;
 		}
@@ -975,7 +721,7 @@ text {
 	color: $white-color;
 	font-size: 20px;
 	margin: 5px 2px;
-	padding: 4px 8px;
+	padding: 6px 8px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -994,7 +740,329 @@ text {
 	position: fixed;
 	right: 4%;
 	z-index: 99;
+
 	&:hover {
 		background-color: #ff000f;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+
+	body {
+		flex-wrap: wrap;
+		height: 100%;
+		margin-top: 2px;
+		padding: 4px;
+		width: 100%;
+  }
+  
+	#background-image {
+		align-self: center;
+		height: 70%;
+		width: 100%;
+	}
+}
+
+/* for screen below or equal to 480px */
+@media screen and (max-width: 480px) {
+
+	.gallery {
+		margin-left: auto;
+  }
+  
+	.portfolio-img {
+		display: none;
+		flex: 100%;
+		max-width: 100%;
+  }
+  
+	.show {
+		display: block;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+	label {
+		visibility: hidden;
+	}
+
+	#video-play {
+		height: 240px;
+		margin: 0;
+		padding: 0;
+		width: 360px;
+	}
+
+	.flex-clientlogo-container {
+		flex: auto;
+	}
+}
+
+@media only screen and (min-width:480px) and (max-width: 720px) {
+
+	.contact {
+		margin: auto;
+	}
+
+	.footer-container {
+		font-family: 'Vollkorn', serif;
+		margin: auto;
+	}
+}
+
+
+/* -----iPad view-----*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	.navbar {
+		padding: 15px;
+		margin: 8px;
+
+		.nav-header {
+			.nav-title {
+				font-size: 30px;
+				padding-left: 5px;
+				padding-right: 0;
+			}
+		}
+
+		a {
+			display: inline-block;
+			font-size: 13px;
+			padding: 15px 5px 5px;
+		}
+
+		.menu-bar {
+			display: none;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 13px;
+			margin-top: 6px;
+		}
+	}
+
+	.dropdown-content {
+		position: absolute;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+	.navbar {
+		padding: 15px;
+
+		.nav-header {
+			.nav-title {
+				font-size: 30px;
+				padding-left: 50px;
+				padding-right: 0;
+			}
+		}
+
+		a {
+			display: inline-block;
+			font-size: 13px;
+			padding: 15px 10px 5px 12px;
+		}
+
+		.menu-bar {
+			display: none;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 13px;
+			margin-top: 6px;
+			padding: 8px;
+		}
+	}
+
+	.dropdown-content {
+		position: absolute;
+	}
+}
+
+
+
+@media screen and (min-width: 1080px) and (max-width: 2024px) {
+
+  .row {
+		&:after {
+			clear: both;
+			content: "";
+			display: table;
+		}
+  }
+  
+  /* The Modal (background) */
+	.modal {
+		background-color: $black-color;
+		display: none;
+		height: 100%;
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+  }
+  
+  /* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		max-height: 50%;
+		max-width: 50%;
+		padding: 0;
+		position: initial;
+  }
+
+  /* Hide the slides by default */
+	.mySlides {
+		display: none;
+  }
+  
+  /* Next & previous buttons */
+	.next {
+		background-color: #add;
+		border-radius: 0 3px 3px 0;
+	  color: $blue-color;
+		cursor: pointer;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 16px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transition: 0.6s ease;
+		width: auto;
+		user-select: none;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+  }
+  
+	.prev {
+		background-color: #add;
+		border-radius: 0 3px 3px 0;
+		color: $blue-color;
+		cursor: pointer;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 16px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transition: 0.6s ease;
+		width: auto;
+		user-select: none;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+  }
+  
+  /* Number text (1/9 etc) */
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 18px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+	
+	.active {
+		opacity: 1;
+  }
+  
+	.hover-shadow {
+		transition: 0.3s;
+  }
+  
+	.hover-shadow {
+		&:hover {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.navbar {
+		padding: 20px;
+		text-align: left;
+		
+		.nav-header {
+			.nav-title {
+				font-size: 28px;
+				font-weight: lighter;
+				margin-left: 148px;
+			}
+		}
+
+		a {
+			display: inline-block;
+			font-size: 15px;
+			padding: 10px;
+		}
+
+		.menu-bar {
+			display: none;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 15px;
+			margin-left: 275px;
+			margin-top: 5px;
+			padding: 10px 30px;
+		}
+	}
+	
+	.dropdown-content {
+		position: absolute;
+	}
+}
+
+
+/* Laptop view */
+@media only screen and (min-width: 1280px) {
+
+	.navbar {
+		padding: 20px;
+		text-align: left;
+
+		.nav-header {
+			.nav-title {
+				font-size: 28px;
+				font-weight: 700;
+				margin-left: 148px;
+			}
+		}
+
+		a {
+			display: inline-block;
+			font-size: 15px;
+			padding: 10px;
+		}
+
+		.menu-bar {
+			display: none;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 15px;
+			margin-left: 60px;
+			margin-top: 5px;
+			padding: 5px;
+		}
+
+	}
+
+	.dropdown-content {
+		position: absolute;
 	}
 }
