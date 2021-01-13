@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto, arial, sans-serif">
   <title>OnePage</title>
 </head>
 
@@ -38,24 +39,24 @@
       <h3>We are team of talented designers</h3>
       <button class="primarybutton">Get Started</button>
     </div>
-    <div class="flex-container align-left">
+    <div class="flex-container">
       <div>
-        <i class="fa fa-file-image-o"></i>
+        <i class="fa fa-file-image-o flex-icon"></i>
         <h5>Lorem Ipsum</h5>
         <p>Now is it avaliable. you have to purchase it. Now is it avaliable. you have to purchase it.</p>
       </div>
       <div>
-        <i class="fa fa-file-movie-o"></i>
+        <i class="fa fa-file-movie-o flex-icon"></i>
         <h5>Lorem Ipsum</h5>
         <p>Now is it avaliable. you have to purchase it. Now is it avaliable. you have to purchase it.</p>
       </div>
       <div>
-        <i class="fa fa-meetup" aria-hidden="true"></i>
+        <i class="fa fa-meetup flex-icon" aria-hidden="true"></i>
         <h5>Lorem Ipsum</h5>
         <p>Now is it avaliable. you have to purchase it. Now is it avaliable. you have to purchase it.</p>
       </div>
       <div>
-        <i class="material-icons">fingerprint</i>
+        <i class="material-icons flex-icon">fingerprint</i>
         <h5>Lorem Ipsum</h5>
         <p>Now is it avaliable. you have to purchase it. Now is it avaliable. you have to purchase it.</p>
       </div>
@@ -94,8 +95,8 @@
       <a href="./assets/about-video.jpg"><i class="fa fa-play-circle fa-5x"></i></a>
     </div>
     <div class="column-flex">
-      <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do elusmod tempor incididunt ut labore et
-        dolore magna aliqua.</p>
+      <p><em>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do elusmod tempor incididunt ut labore et
+          dolore magna aliqua.</em></p>
       <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea</p>
       <p><i class="material-icons">done_all</i>Duis aute irure dolor in reprehenderit in voluptate</p>
       <p><i class="material-icons">done_all</i>Ullamco laboris nisi ut aliquip ex ea commodo</p>
@@ -191,37 +192,35 @@
     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
       sintconsectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
       fugiatsit in iste officiis commodi quidem hic quas.</p>
-    <div class="flex-container">
+    <div class="flex-container3">
       <div>
-        <i class="fa fa-life-saver"></i>
-        <h5>Lorem Ipsum</h5>
+        <i class="fa fa-life-saver icon-background"></i>
+        <h4>Lorem Ipsum</h4>
         <p>Now is it avaliable. you have to purchase it. Now is it avaliable. you have to purchase it.</p>
       </div>
       <div>
-        <i class="fa fa-file-movie-o"></i>
-        <h5>Lorem Ipsum</h5>
+        <i class="fa fa-file-movie-o icon-background"></i>
+        <h4>Lorem Ipsum</h4>
         <p>Now is it avaliable. you have to purchase it.</p>
       </div>
       <div>
-        <i class="fa fa-tachometer"></i>
-        <h5>Lorem Ipsum</h5>
+        <i class="fa fa-tachometer greybackground icon-background"></i>
+        <h4>Lorem Ipsum</h4>
         <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
       </div>
-    </div>
-    <div class="flex-container">
       <div>
-        <i class="fa fa-life-saver"></i>
-        <h5>Lorem Ipsum</h5>
+        <i class="fa fa-life-saver icon-background"></i>
+        <h4>Lorem Ipsum</h4>
         <p>Now is it avaliable. you have to purchase it.</p>
       </div>
       <div>
-        <i class="fa fa-file-text-o"></i>
-        <h5>Lorem Ipsum</h5>
+        <i class="fa fa-file-text-o icon-background"></i>
+        <h4>Lorem Ipsum</h4>
         <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
       </div>
       <div>
-        <i class="fa fa-tasks"></i>
-        <h5>Lorem Ipsum</h5>
+        <i class="fa fa-tasks icon-background"></i>
+        <h4>Lorem Ipsum</h4>
         <p>Voluptatum delenti atque corrupti quos dolores et quas molestias excepturi</p>
       </div>
     </div>
@@ -241,71 +240,45 @@
       consectetur velit. Quisquam quos qulsquam cupiditate. Et nemo qui impedit suscipit alias ea. Qula fuglat
       sitin iste officlis commodi quidem hic quas.</p>
     <div id="myBtnContainer">
-      <button type="button" class="content-button active" onclick="filterSelection('all')">All</button>
-      <button type="button" class="content-button" onclick="filterSelection('app')">APP</button>
-      <button type="button" class="content-button" onclick="filterSelection('card')">CARD</button>
-      <button type="button" class="content-button" onclick="filterSelection('web')">WEB</button>
+      <a href="#all" class="btn active" onclick="filterSelection('all')">All</a>
+      <a href="#app" class="btn" onclick="filterSelection('app')">APP</a>
+      <a href="#card" class="btn" onclick="filterSelection('card')">CARD</a>
+      <a href="#web" class="btn" onclick="filterSelection('web')">WEB</a>
     </div>
+
     <!-- photo gallery -->
     <div class="gallery">
-      <div class="portfolio-img card">
-        <img src="./assets/portfolio-1.jpg" onclick="openModal();currentSlide(1)" alt="curology portfolio-1">
-        <img src="./assets/portfolio-6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"
-          alt="table portfolio-6">
+      <div class="portfolio-img">
+        <div class="port-img app web">
+          <img src="./assets/portfolio-1.jpg" class="hover-shadow" alt="curology portfolio-1">
+        </div>
+        <div class="port-img card">
+          <img src="./assets/portfolio-6.jpg" class="hover-shadow" alt="table portfolio-6">
+        </div>
       </div>
-      <div class="portfolio-img app">
-        <img src="./assets/portfolio-2.jpg" onclick="openModal();currentSlide(2)" alt="cofee-cup portfolio-2">
-        <img src="./assets/portfolio-5.jpg" onclick="openModal();currentSlide(5)" alt="lamp portfolio-5">
-        <img src="./assets/portfolio-9.jpg" onclick="openModal();currentSlide(9)" alt="wrist-watch portfolio-9">
+      <div class="portfolio-img">
+        <div class="port-img app">
+          <img src="./assets/portfolio-2.jpg" class="hover-shadow" alt="cofee-cup portfolio-2">
+        </div>
+        <div class="port-img web">
+          <img src="./assets/portfolio-5.jpg" class="hover-shadow" alt="lamp portfolio-5">
+        </div>
+        <div class="port-img card">
+          <img src="./assets/portfolio-9.jpg" class="hover-shadow" alt="wrist-watch portfolio-9">
+        </div>
       </div>
-      <div class="portfolio-img web">
-        <img src="./assets/portfolio-3.jpg" onclick="openModal();currentSlide(3)" alt="small-plant portfolio-3">
-        <img src="./assets/portfolio-4.jpg" onclick="openModal();currentSlide(4)" alt="sunglasses portfolio-4">
-        <img src="./assets/portfolio-7.jpg" onclick="openModal();currentSlide(7)" alt="camera-lense portfolio-7">
-        <img src="./assets/portfolio-8.jpg" onclick="openModal();currentSlide(8)" alt="glass portfolio-8">
-      </div>
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">×</span>
-        <div class="modal-content" ondblclick="closeModal()">
-          <div class="mySlides">
-            <div class="numbertext">1 / 9</div>
-            <img src="./assets/portfolio-1.jpg" alt="curology portfolio-1">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">2 / 9</div>
-            <img src="./assets/portfolio-2.jpg" alt="cofee-cup portfolio-2">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">3 / 9</div>
-            <img src="./assets/portfolio-3.jpg" alt="small plant portfolio-3">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">4 / 9</div>
-            <img src="./assets/portfolio-4.jpg" alt="sunglasses portfolio-4">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">5 / 9</div>
-            <img src="./assets/portfolio-5.jpg" alt="lamp portfolio-5">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">6 / 9</div>
-            <img src="./assets/portfolio-6.jpg" alt="table portfolio-6">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">7 / 9</div>
-            <img src="./assets/portfolio-7.jpg" alt="camera-lense portfolio-7">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">8 / 9</div>
-            <img src="./assets/portfolio-8.jpg" alt="glass portfolio-8">
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">9 / 9</div>
-            <img src="./assets/portfolio-9.jpg" alt="wrist-watch">
-          </div>
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">‹</a>
-          <a class="next" onclick="plusSlides(1)">›</a>
+      <div class="portfolio-img ">
+        <div class="port-img app">
+          <img src="./assets/portfolio-3.jpg" class="hover-shadow" alt="small-plant portfolio-3">
+        </div>
+        <div class="port-img card">
+          <img src="./assets/portfolio-4.jpg" class="hover-shadow" alt="sunglasses portfolio-4">
+        </div>
+        <div class="port-img web">
+          <img src="./assets/portfolio-7.jpg" class="hover-shadow" alt="camera-lense portfolio-7">
+        </div>
+        <div class="port-img app">
+          <img src="./assets/portfolio-8.jpg" class="hover-shadow" alt="glass portfolio-8">
         </div>
       </div>
     </div>
@@ -407,18 +380,16 @@
       sint consectetur velit. Quisquam quos qulsquam cupiditate.</p>
     <img src="./assets/googlelocation.png" id="google-img" alt="google map location">
     <div class="row-flex">
-      <div class="column-flex">
-        <ul class="contact">
-          <li><a href="#"><i class="fa fa-map-marker social-icon" aria-hidden="true"></i></a>
-            <b>Location:</b><span class="contact-info">A108 Adam Street, New York, NY 535022</span>
-          </li>
-          <li><a href="#"><i class="fa fa-envelope social-icon" aria-hidden="true"></i></a>
-            <b>Email:</b><span class="contact-info">info@example.com</span>
-          </li>
-          <li><a href="#"><i class="fa fa-phone social-icon" aria-hidden="true"></i></a>
-            <b>Call:</b><span class="contact-info">+1 5589 5548855</span>
-          </li>
-        </ul>
+      <div class="column-flex contact">
+        <p><a href="#"><i class="fa fa-map-marker contact-icon icon" aria-hidden="true"></i></a>
+          <b>Location:</b><span class="contact-info">A108 Adam Street, New York, NY 535022</span>
+        </p>
+        <p><a href="#"><i class="fa fa-envelope contact-icon" aria-hidden="true"></i></a>
+          <b>Email:</b><span class="contact-info">info@example.com</span>
+        </p>
+        <p><a href="#"><i class="fa fa-phone contact-icon" aria-hidden="true"></i></a>
+          <b>Call:</b><span class="contact-info">+1 5589 5548855</span>
+        </p>
       </div>
       <div class="column-flex">
         <form action="#">
@@ -444,22 +415,19 @@
       </div>
       <div class="footer-items">
         <strong>Useful Links</strong>
-        <ul>
-          <li><i class="arrow arrow-right"></i>Home</li>
-          <li><i class="arrow arrow-right"></i>About us</li>
-          <li><i class="arrow arrow-right"></i>Services</li>
-          <li><i class="arrow arrow-right"></i>Terms of services</li>
-          <li><i class="arrow arrow-right"></i>Privacy policy</li>
-        </ul>
+        <p><i class="arrow arrow-right"></i>Home</p>
+        <p><i class="arrow arrow-right"></i>About us</p>
+        <p><i class="arrow arrow-right"></i>Services</p>
+        <p><i class="arrow arrow-right"></i>Terms of services</p>
+        <p><i class="arrow arrow-right"></i>Privacy policy</p>
       </div>
       <div class="footer-items">
         <strong>Our Services</strong>
-        <ul>
-          <li><i class="arrow arrow-right"></i>Design</li>
-          <li><i class="arrow arrow-right"></i>Web Devlopment</li>
-          <li><i class="arrow arrow-right"></i>Product Management</li>
-          <li><i class="arrow arrow-right"></i>Marketing</li>
-          <li><i class="arrow arrow-right"></i>Graphic Design</li>
+        <p><i class="arrow arrow-right"></i>Design</p>
+        <p><i class="arrow arrow-right"></i>Web Devlopment</p>
+        <p><i class="arrow arrow-right"></i>Product Management</p>
+        <p><i class="arrow arrow-right"></i>Marketing</p>
+        <p><i class="arrow arrow-right"></i>Graphic Design</p>
         </ul>
       </div>
       <div class="footer-items">

@@ -10,15 +10,13 @@ $white-color: #fff;
 body {
 	background-color: $rgb245;
 	font-family: 'Vollkorn', Helvetica, sans-serif;
-	margin: 0;
-	text-align: center;
+	text-align: center;	
 }
 
 #background-image {
 	background: linear-gradient( #faf9f9f8, rgba(255, 251, 251, 0.74) ), url(../assets/hero-bg.jpg);
 	height: 460px;
 	margin: 0;
-	padding: 0;
 	top: 0;
 	width: 100%;
 }
@@ -54,7 +52,6 @@ img {
 
 li {
 	display: block;
-	list-style: none;
 }
 
 p {
@@ -70,7 +67,9 @@ p {
 
 section {
 	background-color: $rgb245;
+	font-family: 'Roboto', sans-serif;
 	padding: 2%;
+	text-align: center;
 }
 
 * {
@@ -85,6 +84,7 @@ section {
 /* navbar section */
 .navbar {
 	background-color: $white-color;
+	font-family: 'Roboto', sans-serif;
 	height: auto;
 	width: auto;
 	
@@ -93,7 +93,7 @@ section {
 		display: none;
 		font-size: 10px;
 		font-weight: lighter;
-		padding: 2px 8px;
+		padding: 2px;
 		right: auto;
 		text-decoration: none;
 		
@@ -125,6 +125,7 @@ section {
 			left: 0;
 			margin: auto;
 			padding: 5px 10px;
+			text-align: left;
 		}
 	}
 	
@@ -141,7 +142,6 @@ section {
 		padding: 5px;
 		position: absolute;
 	}
-
 }
 
 /* navbar dropdown */
@@ -218,12 +218,12 @@ button {
 	}
 }
 
-/* start & services section */
+/* start section */
 .flex-container {
 	align-content: flex-end;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	padding: 30px;
 
 	div {
@@ -237,6 +237,10 @@ button {
 		margin: 10px 0;
 		padding-top: 40px;
 		width: 200px;
+	}
+
+	.flex-icon { 
+		color: #72deecd2;
 	}
 }
 
@@ -265,7 +269,6 @@ button {
 	flex: 50%;
 	font-family: 'Vollkorn', Helvetica, sans-serif;
 	margin: 0;
-	padding: 5px;
 	text-align: justify;
 }
 
@@ -285,7 +288,6 @@ button {
 
 #video-play {
 	height: 360px;
-	padding-left: 10%;
 	width: 600px;
 }
 
@@ -345,82 +347,54 @@ button {
 	padding-bottom: 4%;
 }
 
-/* portfolio scss */
-.content-button {
-	background-color: $white-color;
-	color: $black-color;
-	font-family: 'Vollkorn', Helvetica, sans-serif;
 
-	&:hover {
-		background-color: $white-color;
-		color: $blue-color;
-	}
-	
-	&:active {
-		background-color: $white-color;
-		color: $blue-color;
-	}
+/* portfolio */
+.btn {
+	background-color: #fff;
+  border: none;
+	cursor: pointer;	
+	outline: none;
+	padding: 12px 30px;
+	text-decoration: none;
+}
+
+	/* Style the active class, and buttons on mouse-over */
+.btn:hover {
+  color: rgb(209, 193, 193);
+}
+
+.active {
+  color: #55acee;
 }
 
 /* portpolio image grid */
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 100px;
-	margin-right: auto;
 }
 
-.modal {
-	display: none;
-	height: auto;
-	left: 0;
-	overflow: auto;
-	padding-top: 0;
-	position: fixed;
-	top: 0;
-	width: auto;
-	z-index: 1;
+.port-img {
+	display: none;;
 }
 
 .portfolio-img {
-	display: none;
-	flex: 25%;
-	max-width: 25%;
+	flex: 33.33%;
+	max-height: 33.33%;
+	max-width: 33.33%;
 	padding: 1%;
-
+	
 	img {
+		max-height: 70%;
 		margin-top: 8px;
 		max-width: 100%;
-		padding-bottom: 10%;
 		vertical-align: middle;
 	}
 }
 
+
 /* The "show" class is added to the filtered images */
 .show {
 	display: block;
-}
-
- /* The Close Button */
-.close {
-	color: rgb(247, 12, 12);
-	font-size: 35px;
-	font-weight: bold;
-	position: relative;
-	right: 10px;
-	top: 10px;
-
-	&:focus {
-		color: #999;
-		cursor: pointer;
-		text-decoration: none;
-	}
-
-	&:hover {
-		color: #999;
-		cursor: pointer;
-		text-decoration: none;
-	}
 }
 
 /* for team section */
@@ -462,8 +436,7 @@ button {
 	align-content: flex-end;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 20px 30px;
+	justify-content: space-between;
 
 	div {
 		background-color: $white-color;
@@ -526,11 +499,11 @@ button {
 }
 
 .carousel-next {
-	right: 3%;
+	right: 1%;
 }
 
 .carousel-prev {
-	left: 3%;
+	left: 1%;
 }
 
 #carousel-1 {
@@ -553,22 +526,81 @@ button {
 	}
 }
 
-/* contact us */
-.contact {
-	margin: 8% 18%;
+/* services section */
+.flex-container3 {
+	align-content: flex-end;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 30px;
+
+	div {
+		background-color: $white-color;
+		border-radius: 10px;
+		border-width: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-sizing: border-box;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-weight: lighter;
+		height: 340px;
+		margin: 10px 0;
+		padding: 50px;
+		width: 350px;
+	}
+
+	h4 {
+		color: rgba(2, 8, 99, 0.822);
+		font-size: 18px;
+	}
+
+	p {
+		color: rgba(99, 99, 100, 0.932);
+		font-size: 14px;
+		padding: 2%;
+	}
+
+	.icon-background {
+		background-color: #d1d0d0;
+		border-radius: 135px 28px 120px 75px;
+		padding:10%;		
+	}
 }
 
-.contact-info {
-	color: $blue-color;
-	display: block;
-	font-size: 14px;
-	margin-left: 2%;
-	padding: 2px 30px;
+/* contact us */
+.contact {
+
+	b {
+		padding: 2px;
+	}
+
+	.contact-info {
+		color: $blue-color;
+		display: block;
+		font-size: 14px;
+		margin-left: 2%;
+		padding: 0px 40px;
+	}
+
+	.contact-icon {
+		background: #baddf8;
+		border-radius: 5px;
+		color: $white-color;
+		font-size: 20px;
+		margin: 5px 2px;
+		padding: 10px 12px;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.icon {
+		padding: 10px 15px;
+	}
 }
 
 #google-img {
 	height: 160px;
-	width: 100%;
+	width: 99%;
 }
 
 /* user input field */
@@ -653,7 +685,7 @@ text {
 	background-color: rgba(248, 253, 255, 0.658);
 	display: flex;
 	flex-wrap: wrap;
-	margin: 2% 8%;
+	margin: 2%;
 	padding-bottom: 25px;
 }
 
@@ -662,12 +694,16 @@ text {
 	flex: 25%;
 	font-family: 'Abhaya Libre', serif;
 	font-weight: lighter;
-	padding: 5px;
-	text-align: justify;
+	text-align: left;
 
-	li {
+	strong {
+		color: rgba(2, 8, 99, 0.822);
+		font-size: 18px;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	p {
 		display: block;
-		padding-bottom: 4%;
 	
 		i {
 			margin-right: 4%;
@@ -752,7 +788,6 @@ text {
 		flex-wrap: wrap;
 		height: 100%;
 		margin-top: 2px;
-		padding: 4px;
 		width: 100%;
   }
   
@@ -766,12 +801,19 @@ text {
 /* for screen below or equal to 480px */
 @media screen and (max-width: 480px) {
 
+	.btn {
+		padding: 4px;	
+	}
+
 	.gallery {
 		margin-left: auto;
   }
-  
+	
+	.port-img {
+		display: none;;
+	}
+	
 	.portfolio-img {
-		display: none;
 		flex: 100%;
 		max-width: 100%;
   }
@@ -779,6 +821,17 @@ text {
 	.show {
 		display: block;
   }
+}
+
+@media only screen and (max-width: 780px) {
+
+	.flex-container {
+		justify-content: space-around;
+	}
+
+	.flex-container3 {
+		justify-content: space-around;
+	}
 }
 
 @media only screen and (max-width: 720px) {
@@ -789,13 +842,15 @@ text {
 
 	#video-play {
 		height: 240px;
-		margin: 0;
-		padding: 0;
 		width: 360px;
 	}
 
 	.flex-clientlogo-container {
 		flex: auto;
+	}
+
+	.flex-container1 {
+		justify-content: space-around;
 	}
 }
 
@@ -810,7 +865,6 @@ text {
 		margin: auto;
 	}
 }
-
 
 /* -----iPad view-----*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -846,6 +900,10 @@ text {
 
 	.dropdown-content {
 		position: absolute;
+	}
+
+	.flex-container1 {
+		justify-content: space-around;
 	}
 }
 
@@ -883,9 +941,11 @@ text {
 	.dropdown-content {
 		position: absolute;
 	}
+
+	.flex-container1 {
+		justify-content: space-around;
+	}
 }
-
-
 
 @media screen and (min-width: 1080px) and (max-width: 2024px) {
 
@@ -896,87 +956,7 @@ text {
 			display: table;
 		}
   }
-  
-  /* The Modal (background) */
-	.modal {
-		background-color: $black-color;
-		display: none;
-		height: 100%;
-		overflow: auto;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 1;
-  }
-  
-  /* Modal Content */
-	.modal-content {
-		background-color: #fefefe;
-		max-height: 50%;
-		max-width: 50%;
-		padding: 0;
-		position: initial;
-  }
-
-  /* Hide the slides by default */
-	.mySlides {
-		display: none;
-  }
-  
-  /* Next & previous buttons */
-	.next {
-		background-color: #add;
-		border-radius: 0 3px 3px 0;
-	  color: $blue-color;
-		cursor: pointer;
-		font-size: 20px;
-		font-weight: bold;
-		padding: 16px;
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transition: 0.6s ease;
-		width: auto;
-		user-select: none;
-
-		&:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		}
-  }
-  
-	.prev {
-		background-color: #add;
-		border-radius: 0 3px 3px 0;
-		color: $blue-color;
-		cursor: pointer;
-		font-size: 20px;
-		font-weight: bold;
-		padding: 16px;
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transition: 0.6s ease;
-		width: auto;
-		user-select: none;
-
-		&:hover {
-			background-color: rgba(0, 0, 0, 0.8);
-		}
-  }
-  
-  /* Number text (1/9 etc) */
-	.numbertext {
-		color: #f2f2f2;
-		font-size: 18px;
-		padding: 8px 12px;
-		position: absolute;
-		top: 0;
-	}
-	
-	.active {
-		opacity: 1;
-  }
-  
+    
 	.hover-shadow {
 		transition: 0.3s;
   }
@@ -1037,7 +1017,7 @@ text {
 		.nav-header {
 			.nav-title {
 				font-size: 28px;
-				font-weight: 700;
+				font-weight: lighter;
 				margin-left: 148px;
 			}
 		}
