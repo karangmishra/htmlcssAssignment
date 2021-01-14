@@ -186,6 +186,7 @@ button:hover {
 .align-left {
   margin-left: 50px;
   padding-left: 10px;
+  padding-right: 25px;
   text-align: left; }
 
 .material-icons {
