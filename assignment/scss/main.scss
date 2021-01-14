@@ -51,8 +51,9 @@ img {
 	margin-top: 0;
 }
 
-li {
-	display: block;
+ul {  
+	list-style:none; 
+	text-indent:-22px; 
 }
 
 p {
@@ -701,6 +702,11 @@ text {
 		color: rgba(2, 8, 99, 0.822);
 		font-size: 18px;
 		font-family: 'Roboto', sans-serif;
+		padding: 4px;
+	}
+
+	.subscribe {
+		width: 60%;
 	}
 
 	p {
@@ -726,6 +732,7 @@ text {
 
 .footer-sociallogo {
 	flex-wrap: nowrap;
+	padding-right: 4%;
 	text-align: end;
 }
 
@@ -775,7 +782,7 @@ text {
 	outline: none;
 	padding: 10px;
 	position: fixed;
-	right: 4%;
+	right: 1%;
 	z-index: 99;
 
 	&:hover {
@@ -821,7 +828,11 @@ text {
   
 	.show {
 		display: block;
-  }
+	}
+
+	#top-btn {
+		right: 2%;
+	}
 }
 
 @media only screen and (max-width: 780px) {
