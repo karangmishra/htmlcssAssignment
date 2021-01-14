@@ -358,7 +358,6 @@ button {
 	padding-bottom: 4%;
 }
 
-
 /* portfolio */
 .btn {
 	background-color: #fff;
@@ -367,15 +366,14 @@ button {
 	outline: none;
 	padding: 12px 30px;
 	text-decoration: none;
+
+	&:hover {
+		color: rgb(209, 193, 193);
+	}
 }
 
-	/* Style the active class, and buttons on mouse-over */
-.btn:hover {
-  color: rgb(209, 193, 193);
-}
-
-.active {
-  color: #55acee;
+.beactive {
+	color: #55acee;
 }
 
 /* portpolio image grid */
@@ -401,7 +399,6 @@ button {
 		vertical-align: middle;
 	}
 }
-
 
 /* The "show" class is added to the filtered images */
 .show {
@@ -549,8 +546,8 @@ button {
 		background-color: $white-color;
 		border-radius: 10px;
 		border-width: 5px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		box-sizing: border-box;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		display: block;
 		font-family: 'Roboto', sans-serif;
 		font-weight: lighter;
@@ -1070,5 +1067,3 @@ text {
 		position: absolute;
 	}
 }
-
-
