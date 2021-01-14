@@ -1,5 +1,5 @@
 /* filtering image */
-filterSelection('all')
+filterSelection('all');
 function filterSelection(c) {
   let x;
   let i;

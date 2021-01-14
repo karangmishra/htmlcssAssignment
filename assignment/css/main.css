@@ -67,14 +67,13 @@ section {
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
   height: auto;
-  width: auto; }
+  width: 100%; }
   .navbar a {
     color: #556270;
     display: none;
     font-size: 10px;
     font-weight: lighter;
     padding: 2px;
-    right: auto;
     text-decoration: none; }
     .navbar a:hover {
       color: #00f; }
@@ -87,16 +86,15 @@ section {
     float: right; }
   .navbar .nav-header {
     display: inline;
-    padding-right: 20px; }
+    padding-right: 20px;
+    text-align: left; }
     .navbar .nav-header .nav-title {
       color: #848b92;
       display: inline;
       font-size: 14px;
       font-weight: lighter;
-      left: 0;
       margin: auto;
-      padding: 5px 10px;
-      text-align: left; }
+      padding: 5px 10px; }
   .navbar .button {
     background-color: #00f;
     border: none;
@@ -641,6 +639,9 @@ text {
   .flex-container3 {
     justify-content: space-around; } }
 @media only screen and (max-width: 720px) {
+  #get-btn {
+    visibility: hidden; }
+
   label {
     visibility: hidden; }
 
@@ -663,12 +664,12 @@ text {
 /* -----iPad view-----*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
-    padding: 15px;
-    margin: 8px; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
     .navbar .nav-header .nav-title {
+      float: left;
       font-size: 30px;
-      padding-left: 5px;
-      padding-right: 0; }
+      padding-left: 5px; }
     .navbar a {
       display: inline-block;
       font-size: 13px;
@@ -687,11 +688,11 @@ text {
     justify-content: space-around; } }
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
   .navbar {
-    padding: 15px; }
+    padding-top: 15px;
+    padding-bottom: 15px; }
     .navbar .nav-header .nav-title {
-      font-size: 30px;
-      padding-left: 50px;
-      padding-right: 0; }
+      float: left;
+      font-size: 30px; }
     .navbar a {
       display: inline-block;
       font-size: 13px;
@@ -710,6 +711,30 @@ text {
   .flex-container1 {
     justify-content: space-around; } }
 @media screen and (min-width: 1080px) and (max-width: 2024px) {
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 20px; }
+    .navbar .nav-header .nav-title {
+      float: left;
+      font-size: 30px; }
+    .navbar a {
+      display: inline-block;
+      font-size: 13px;
+      padding: 15px 10px 5px 12px; }
+    .navbar .menu-bar {
+      display: none; }
+    .navbar .button {
+      display: inline-block;
+      font-size: 13px;
+      margin-top: 6px;
+      padding: 8px; }
+
+  .dropdown-content {
+    position: absolute; }
+
+  .flex-container1 {
+    justify-content: space-around; }
+
   .row:after {
     clear: both;
     content: "";
@@ -722,48 +747,22 @@ text {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
 @media only screen and (min-width: 1400px) {
   .navbar {
-    padding: 20px;
-    text-align: left; }
+    padding-left: 40px;
+    padding-bottom: 30px; }
     .navbar .nav-header .nav-title {
-      font-size: 28px;
-      font-weight: lighter;
-      margin-left: 148px; }
+      float: left;
+      font-size: 30px; }
     .navbar a {
       display: inline-block;
-      font-size: 15px;
-      padding: 10px; }
+      font-size: 13px;
+      padding: 15px 12px 5px 12px; }
     .navbar .menu-bar {
       display: none; }
     .navbar .button {
       display: inline-block;
-      font-size: 15px;
-      margin-left: 275px;
-      margin-top: 5px;
-      padding: 10px 30px; }
-
-  .dropdown-content {
-    position: absolute; } }
-/* Laptop view */
-@media only screen and (min-width: 1280px) {
-  .navbar {
-    padding: 20px;
-    text-align: left; }
-    .navbar .nav-header .nav-title {
-      font-size: 28px;
-      font-weight: lighter;
-      margin-left: 148px; }
-    .navbar a {
-      display: inline-block;
-      font-size: 15px;
-      padding: 10px; }
-    .navbar .menu-bar {
-      display: none; }
-    .navbar .button {
-      display: inline-block;
-      font-size: 15px;
-      margin-left: 60px;
-      margin-top: 5px;
-      padding: 5px; }
+      font-size: 13px;
+      margin-top: 6px;
+      padding: 8px; }
 
   .dropdown-content {
     position: absolute; } }

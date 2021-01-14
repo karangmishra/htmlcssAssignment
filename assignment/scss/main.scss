@@ -88,7 +88,7 @@ section {
 	background-color: $white-color;
 	font-family: 'Roboto', sans-serif;
 	height: auto;
-	width: auto;
+	width: 100%;
 	
 	a {
 		color: #556270;
@@ -96,7 +96,6 @@ section {
 		font-size: 10px;
 		font-weight: lighter;
 		padding: 2px;
-		right: auto;
 		text-decoration: none;
 		
 		&:hover {
@@ -118,16 +117,15 @@ section {
 	.nav-header {
 		display: inline;
 		padding-right: 20px;
-		
+		text-align: left;
+
 		.nav-title {
 			color: #848b92;
 			display: inline;
 			font-size: 14px;
 			font-weight: lighter;
-			left: 0;
 			margin: auto;
 			padding: 5px 10px;
-			text-align: left;
 		}
 	}
 	
@@ -848,6 +846,10 @@ text {
 
 @media only screen and (max-width: 720px) {
 
+	#get-btn {
+		visibility: hidden;
+	}
+
 	label {
 		visibility: hidden;
 	}
@@ -882,14 +884,14 @@ text {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
 	.navbar {
-		padding: 15px;
-		margin: 8px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 
 		.nav-header {
 			.nav-title {
+				float: left;
 				font-size: 30px;
 				padding-left: 5px;
-				padding-right: 0;
 			}
 		}
 
@@ -922,13 +924,13 @@ text {
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
 
 	.navbar {
-		padding: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 
 		.nav-header {
 			.nav-title {
+				float: left;
 				font-size: 30px;
-				padding-left: 50px;
-				padding-right: 0;
 			}
 		}
 
@@ -961,6 +963,43 @@ text {
 
 @media screen and (min-width: 1080px) and (max-width: 2024px) {
 
+	.navbar {
+		padding-top: 15px;
+		padding-bottom: 20px;
+
+		.nav-header {
+			.nav-title {
+				float: left;
+				font-size: 30px;
+			}
+		}
+
+		a {
+			display: inline-block;
+			font-size: 13px;
+			padding: 15px 10px 5px 12px;
+		}
+
+		.menu-bar {
+			display: none;
+		}
+
+		.button {
+			display: inline-block;
+			font-size: 13px;
+			margin-top: 6px;
+			padding: 8px;
+		}
+	}
+
+	.dropdown-content {
+		position: absolute;
+	}
+
+	.flex-container1 {
+		justify-content: space-around;
+	}
+
   .row {
 		&:after {
 			clear: both;
@@ -983,21 +1022,20 @@ text {
 @media only screen and (min-width: 1400px) {
 
 	.navbar {
-		padding: 20px;
-		text-align: left;
-		
+		padding-left: 40px;
+		padding-bottom: 30px;
+
 		.nav-header {
 			.nav-title {
-				font-size: 28px;
-				font-weight: lighter;
-				margin-left: 148px;
+				float: left;
+				font-size: 30px;
 			}
 		}
 
 		a {
 			display: inline-block;
-			font-size: 15px;
-			padding: 10px;
+			font-size: 13px;
+			padding: 15px 12px 5px 12px;
 		}
 
 		.menu-bar {
@@ -1006,55 +1044,15 @@ text {
 
 		.button {
 			display: inline-block;
-			font-size: 15px;
-			margin-left: 275px;
-			margin-top: 5px;
-			padding: 10px 30px;
+			font-size: 13px;
+			margin-top: 6px;
+			padding: 8px;
 		}
 	}
-	
+
 	.dropdown-content {
 		position: absolute;
 	}
 }
 
 
-/* Laptop view */
-@media only screen and (min-width: 1280px) {
-
-	.navbar {
-		padding: 20px;
-		text-align: left;
-
-		.nav-header {
-			.nav-title {
-				font-size: 28px;
-				font-weight: lighter;
-				margin-left: 148px;
-			}
-		}
-
-		a {
-			display: inline-block;
-			font-size: 15px;
-			padding: 10px;
-		}
-
-		.menu-bar {
-			display: none;
-		}
-
-		.button {
-			display: inline-block;
-			font-size: 15px;
-			margin-left: 60px;
-			margin-top: 5px;
-			padding: 5px;
-		}
-
-	}
-
-	.dropdown-content {
-		position: absolute;
-	}
-}
