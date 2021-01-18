@@ -99,9 +99,9 @@ section {
     color: #2487ce; }
   .navbar .menu-bar {
     display: block;
+    float: right;
     font-size: 12px;
-    padding-top: 5px;
-    float: right; }
+    padding-top: 5px; }
   .navbar .nav-header {
     display: inline;
     padding-right: 20px;
@@ -192,8 +192,8 @@ section {
   border-radius: 4px;
   border-width: 2px;
   color: #2487ce;
-  padding: 12px 20px;
-  margin-left: 40%; }
+  margin-left: 40%;
+  padding: 12px 20px; }
 
 /* start section */
 .flex-container {
@@ -318,8 +318,8 @@ section {
   flex-wrap: wrap; }
 
 .port-img {
-  padding: 2%;
-  display: none; }
+  display: none;
+  padding: 2%; }
 
 .portfolio-img {
   flex: 33.33%;
@@ -327,8 +327,8 @@ section {
   max-width: 33.33%;
   padding: 1%; }
   .portfolio-img img {
-    max-height: 70%;
     margin-top: 8px;
+    max-height: 70%;
     max-width: 100%;
     vertical-align: middle; }
 
@@ -404,7 +404,7 @@ section {
 /* for avatar */
 .avatar {
   border-radius: 50%;
-  width: 180px; }
+  width: 150px; }
 
 .carousel-control {
   background: rgba(0, 0, 0, 0.28);
@@ -444,8 +444,8 @@ section {
     background: #fff;
     border-radius: 10px;
     border-width: 5px;
-    box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
     display: block;
     font-weight: lighter;
     height: 350px;
@@ -472,8 +472,8 @@ section {
     background: #fff;
     border-radius: 10px;
     border-width: 5px;
-    box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
     font-size: 20px;
     height: 400px;
     margin: 20px 0;
@@ -493,47 +493,50 @@ section {
   padding: 4px; }
 
 /* contact us */
-.contact b {
-  padding: 2px; }
-.contact .contact-info {
-  color: #2487ce;
-  display: block;
-  font-size: 14px;
-  margin-left: 2%;
-  padding: 0px 40px; }
-.contact .contact-icon {
+.contact-icon {
   background: #baddf8;
   border-radius: 5px;
   color: #fff;
   font-size: 20px;
   margin: 5px 2px;
   padding: 10px 12px;
-  text-align: center;
-  vertical-align: middle; }
-.contact .icon {
+  text-align: center; }
+
+.icon {
   padding: 10px 15px; }
 
 #google-img {
   height: 160px;
   width: 99%; }
 
+.over-under {
+  display: inline-block;
+  position: relative;
+  top: 1em; }
+
+.over {
+  color: #124265;
+  display: table-row;
+  font-size: 900;
+  font-weight: bold; }
+
+.under {
+  color: #2487ce;
+  display: table-row; }
+
 /* user input field */
-input {
+form input {
   border: 1px solid #ccc;
+  height: 40px;
   margin-bottom: 16px;
-  margin-top: 6px;
-  padding: 12px;
   resize: vertical;
   width: 45%; }
-
-#subject {
+form #subject {
   width: 100%; }
-
-#message {
+form #message {
   height: 150px;
   width: 100%; }
-
-text {
+form text {
   border: 1px solid #ccc;
   margin-bottom: 16px;
   margin-top: 6px;
@@ -726,18 +729,18 @@ text {
     justify-content: space-around; }
 
   .quote-container {
-    justify-content: space-around; } }
-@media only screen and (min-width: 480px) and (max-width: 720px) {
-  .contact {
-    margin: auto; }
+    justify-content: space-around; }
 
+  .contact-info {
+    display: inline-block; } }
+@media only screen and (min-width: 480px) and (max-width: 720px) {
   .footer-container {
     margin: auto; } }
 /* -----iPad view-----*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    padding-top: 10px; }
     .navbar .nav-header .nav-title {
       float: left;
       font-size: 30px;
@@ -773,8 +776,8 @@ text {
     width: 360px; } }
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
   .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    padding-top: 15px; }
     .navbar .nav-header .nav-title {
       float: left;
       font-size: 30px; }
@@ -810,8 +813,8 @@ text {
     width: 420px; } }
 @media screen and (min-width: 1080px) and (max-width: 2024px) {
   .navbar {
-    padding-top: 15px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-top: 15px; }
     .navbar .nav-header .nav-title {
       float: left;
       font-size: 30px; }
@@ -854,8 +857,8 @@ text {
     width: 320px; } }
 @media only screen and (min-width: 1400px) {
   .navbar {
-    padding-left: 40px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    padding-left: 40px; }
     .navbar .nav-header .nav-title {
       float: left;
       font-size: 30px; }
