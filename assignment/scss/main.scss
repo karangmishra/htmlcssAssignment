@@ -2,12 +2,11 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 $black-color: #000;
-$rgb245: #f8fbfe;
+$fadecolor: #f8fbfe;
 $blue-color: #2487ce;
 $white-color: #fff;
 
 body {
-	background: $rgb245;
 	color: #9d9898;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;	
@@ -77,7 +76,7 @@ p {
 }
 
 section {
-	background: $rgb245;
+	background: $fadecolor;
 	padding: 2%;
 	text-align: center;
 }
@@ -475,8 +474,12 @@ section {
 
 /* background */
 .footer {
-	background: #f8fdffa8;
-	padding-top: 2%;
+	background: $fadecolor;
+}
+
+.sub-footer {
+	background: $white-color;
+	padding-top: 4%;
 }
 
 /* people quote section */
@@ -785,7 +788,6 @@ form {
 
 /* footer column separation */
 .footer-container {
-	background: rgba(248, 253, 255, 0.658);
 	display: flex;
 	flex-wrap: wrap;
 	margin: 2%;

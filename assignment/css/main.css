@@ -1,7 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,600&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 body {
-  background: #f8fbfe;
   color: #9d9898;
   font-family: 'Roboto', sans-serif;
   text-align: center; }
@@ -359,8 +358,11 @@ section {
 
 /* background */
 .footer {
-  background: #f8fdffa8;
-  padding-top: 2%; }
+  background: #f8fbfe; }
+
+.sub-footer {
+  background: #fff;
+  padding-top: 4%; }
 
 /* people quote section */
 .quote-container {
@@ -590,7 +592,6 @@ form text {
 
 /* footer column separation */
 .footer-container {
-  background: rgba(248, 253, 255, 0.658);
   display: flex;
   flex-wrap: wrap;
   margin: 2%;
