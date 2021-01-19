@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>OnePage</title>
 </head>
-
+<body>
 <div id="background-image">
   <!-- navbar -->
   <nav>
@@ -245,7 +245,6 @@
     <a href="#card" class="btn" onclick="filterSelection('card')">CARD</a>
     <a href="#web" class="btn" onclick="filterSelection('web')">WEB</a>
   </div>
-
   <!-- photo gallery -->
   <div class="gallery">
     <div class="portfolio-img">
@@ -387,17 +386,17 @@
   <img src="./assets/googlelocation.png" id="google-img" alt="google map location">
   <div class="row-flex contact-info">
     <div class="column-flex contact">
-      <p><i class="fa fa-map-marker contact-icon icon" aria-hidden="true"></i></a>
+      <p><i class="fa fa-map-marker contact-icon icon" aria-hidden="true"></i>
         <span class="over-under">
           <span class="over">Location:</span><span class="under">A108 Adam Street, New York, NY 535022</span>
         </span>
       </p>
-      <p><i class="fa fa-envelope contact-icon" aria-hidden="true"></i></a>
+      <p><i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
         <span class="over-under">
           <span class="over">Email:</span><span class="under">info@example.com</span>
         </span>
       </p>
-      <p><i class="fa fa-phone contact-icon" aria-hidden="true"></i></a>
+      <p><i class="fa fa-phone contact-icon" aria-hidden="true"></i>
         <span class="over-under">
           <span class="over">Call:</span><span class="under">+1 5589 5548855</span>
         </span>
@@ -411,7 +410,7 @@
           oninvalid='this.setCustomValidity("proper email required");' oninput="this.setCustomValidity('')">
         <input type="text" id="subject" name="subject" size="50" placeholder="Subject" required
           oninvalid="this.setCustomValidity('proper subject required');" oninput="this.setCustomValidity('')">
-        <textarea type="text" id="message" name="message" size="120" placeholder="Message" required
+        <textarea id="message" name="message" placeholder="Message" required
           oninvalid="this.setCustomValidity('proper message required');"
           oninput="this.setCustomValidity('')"></textarea>
         <button type="submit" class="send-btn" name="submit" value="Submit">Send Message</button>

@@ -109,6 +109,7 @@ section {
 		  color: $white-color;
 		}
 	}
+
 	.action-call {
 		border-color: $white-color;
 	}
@@ -236,10 +237,10 @@ section {
 
 .action-call {
 	background: #2487ce;
-	border-color: #ffffff;
+	border-color: $white-color;
 	border-radius: 4px;
 	border-width: 2px;
-	color: #fff;
+	color: $white-color;
 	padding: 12px 20px;
 }
 
