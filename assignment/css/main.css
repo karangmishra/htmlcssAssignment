@@ -524,7 +524,8 @@ section {
 
 .under {
   color: #2487ce;
-  display: table-row; }
+  display: table-row;
+  font-size: smaller; }
 
 /* user input field */
 form input {
