@@ -403,7 +403,7 @@
       </p>
     </div>
     <div class="column-flex">
-      <form name="registration" onSubmit="return formValidation();" action="./html/thanks.html">
+      <form name="registration" onSubmit="return formValidation();" action="./html/thanks.html" method="POST">
         <input type="text" id="cname" name="username" size="20" placeholder="Your Name" required
           oninvalid="this.setCustomValidity('please type proper name')" oninput="this.setCustomValidity('')">
         <input type="text" id="cemail" name="email" size="30" placeholder="Your Email" required

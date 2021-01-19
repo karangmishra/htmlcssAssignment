@@ -20,8 +20,7 @@ h1 {
 
 h2 {
   color: #1a456f;
-  margin-top: 2%;
-  padding: 20px; }
+  margin-top: 4%; }
 
 h3 {
   color: #124265;
@@ -169,9 +168,8 @@ section {
 
 .action-call {
   background: #2487ce;
-  border-color: #fff;
+  border: 2px solid #fff;
   border-radius: 4px;
-  border-width: 2px;
   color: #fff;
   padding: 12px 20px; }
 
@@ -190,14 +188,15 @@ section {
   border: 0;
   color: #fff;
   margin-left: 40%;
+  margin-top: 4%;
   padding: 12px 20px; }
 
 /* start section */
 .flex-container {
-  align-content: flex-end;
+  align-content: flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px; }
   .flex-container div {
     background: #fff;
@@ -206,8 +205,8 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-sizing: border-box;
     font-size: 20px;
-    height: 230px;
-    margin: 10px 0;
+    height: 220px;
+    margin: 20px;
     padding-top: 40px;
     width: 200px; }
   .flex-container .flex-icon {
@@ -436,10 +435,10 @@ section {
 
 /* services section */
 .flex-container3 {
-  align-content: flex-end;
+  align-content: flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .flex-container3 div {
     background: #fff;
     border-radius: 10px;
@@ -448,10 +447,10 @@ section {
     box-sizing: border-box;
     display: block;
     font-weight: lighter;
-    height: 350px;
-    margin: 40px 30px;
+    height: 280px;
+    margin: 2%;
     padding: 40px;
-    width: 380px; }
+    width: 320px; }
   .flex-container3 h4 {
     color: rgba(2, 8, 99, 0.822);
     font-size: 18px; }
@@ -705,12 +704,6 @@ form text {
 
   .footer-items {
     flex: 40%; } }
-@media only screen and (max-width: 780px) {
-  .flex-container {
-    justify-content: space-around; }
-
-  .flex-container3 {
-    justify-content: space-around; } }
 @media only screen and (max-width: 720px) {
   #get-btn {
     visibility: hidden; }
@@ -765,12 +758,6 @@ form text {
   .quote-container {
     justify-content: space-around; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .flex-container3 div {
-    height: 300px;
-    margin: 40px 30px;
-    padding: 40px;
-    width: 320px; }
-
   #video-play {
     height: 420px;
     width: 360px; } }
@@ -801,12 +788,6 @@ form text {
 
   .quote-container {
     justify-content: space-around; }
-
-  .flex-container3 div {
-    height: 300px;
-    margin: 40px 30px;
-    padding: 40px;
-    width: 320px; }
 
   #video-play {
     height: auto;
@@ -848,13 +829,7 @@ form text {
     transition: 0.3s; }
 
   .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-  .flex-container3 div {
-    height: 300px;
-    margin: 40px 30px;
-    padding: 40px;
-    width: 320px; } }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
 @media only screen and (min-width: 1400px) {
   .navbar {
     padding-bottom: 30px;

@@ -1,0 +1,7 @@
+{
+  "name": "user name",
+  "email" :"user-email-id",
+  "subject": "subject line here",
+  "message":"message content here",
+  "date": "date & time of form submission"
+}

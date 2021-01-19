@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <section class="background-white">
+    <h2>CONTACT</h2>
+    <p>Magnam dolores commodi suscipit. Necessitatibus elus consequatur ex aliquid fuga enum quidem. Sit
+      sint consectetur velit. Quisquam quos qulsquam cupiditate.</p>
+    <img src="./assets/googlelocation.png" id="google-img" alt="google map location">
+    <div class="row-flex contact-info">
+      <div class="column-flex contact">
+        <p><i class="fa fa-map-marker contact-icon icon" aria-hidden="true"></i>
+          <span class="over-under">
+            <span class="over">Location:</span><span class="under">A108 Adam Street, New York, NY 535022</span>
+          </span>
+        </p>
+        <p><i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+          <span class="over-under">
+            <span class="over">Email:</span><span class="under">info@example.com</span>
+          </span>
+        </p>
+        <p><i class="fa fa-phone contact-icon" aria-hidden="true"></i>
+          <span class="over-under">
+            <span class="over">Call:</span><span class="under">+1 5589 5548855</span>
+          </span>
+        </p>
+      </div>
+      <div class="column-flex">
+        <form name="registration"  method="POST">
+          <input type="text" id="cname" name="username" size="20" placeholder="Your Name" required
+            oninvalid="this.setCustomValidity('please type proper name')" oninput="this.setCustomValidity('')">
+          <input type="text" id="cemail" name="email" size="30" placeholder="Your Email" required
+            oninvalid='this.setCustomValidity("proper email required");' oninput="this.setCustomValidity('')">
+          <input type="text" id="subject" name="subject" size="50" placeholder="Subject" required
+            oninvalid="this.setCustomValidity('proper subject required');" oninput="this.setCustomValidity('')">
+          <textarea id="message" name="message" placeholder="Message" required
+            oninvalid="this.setCustomValidity('proper message required');"
+            oninput="this.setCustomValidity('')"></textarea>
+          <button type="submit" class="send-btn" name="submit" value="Submit" id="contact-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./js/navmenu.js"></script>
+  <script src="./js/mainjs.js"></script>
+  <script src="./js/jstojson.js"></script>
+  <script src="./js/portfolio.js"></script>
+  <script src="./js/validation.js"></script>
+</body>
+</html>
