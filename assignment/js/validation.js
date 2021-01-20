@@ -16,20 +16,20 @@ function formValidation() {
   return false;
 }
 
-function useridValidation(uid, mx, my) {
+function useridValidation(uid) {
   let uid_len = uid.value.length;
-  let letters = /^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/;
-  if (uid_len == 0 || uid_len >= my || uid_len < mx) {
-    uid.focus();
-    alert("name should be minimum 3 character and maximum 20");
-    uid.focus();
-    return false;
+  let letters = /^[A-Za-z0-9-]+[ 0-9A-Za-z#$%=@!{},`~&*()'<>?.:;_|^/+\t\r\n\[\]"-]*$/;
+  if (uid_len == !0 || uid_len >= 3 && uid_len < 20 && uid.value.match(letters)) {
+    return true;
   }
-  return true;
+  uid.focus();
+  alert("name should be minimum 3 character and maximum 20");
+  uid.focus();
+  return false;
 }
 
 function validSubject(subject) {
-  let letters = /^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/;
+  let letters = /^[A-Za-z0-9-]+[ 0-9A-Za-z#$%=@!{},`~&*()'<>?.:;_|^/+\t\r\n\[\]"-]*$/;
   let sub_leng = subject.value.length;
 
   if (subject.value.match(letters) && sub_leng > 4 && sub_leng < 80) {
@@ -42,7 +42,7 @@ function validSubject(subject) {
 }
 
 function validMessage(message) {
-  let letters = /^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/;
+  let letters =/^[A-Za-z0-9-]+[ 0-9A-Za-z#$%=@!{},`~&*()'<>?.:;_|^/+\t\r\n\[\]"-]*$/;
   let message_leng = message.value.length;
 
   if (message.value.match(letters) && message_leng > 4 && message_leng < 80) {
