@@ -402,18 +402,18 @@
         </span>
       </p>
     </div>
-    <div class="column-flex">
-      <form name="registration" onSubmit="return formValidation();" action="./html/thanks.html" method="POST">
-        <input type="text" id="cname" name="username" size="20" placeholder="Your Name" required
+    <div class="column-flex" id="create-book">
+      <form name="registration"id="book-form" action="./html/thanks.html" method="POST">
+        <input type="text" id="username" name="username" size="20" placeholder="Your Name" required
           oninvalid="this.setCustomValidity('please type proper name')" oninput="this.setCustomValidity('')">
         <input type="text" id="cemail" name="email" size="30" placeholder="Your Email" required
           oninvalid='this.setCustomValidity("proper email required");' oninput="this.setCustomValidity('')">
         <input type="text" id="subject" name="subject" size="50" placeholder="Subject" required
-          oninvalid="this.setCustomValidity('proper subject required');" oninput="this.setCustomValidity('')">
+          oninvalid="this.setCustomValidity('proper subject required minimum length 5 ');" oninput="this.setCustomValidity('')">
         <textarea id="message" name="message" placeholder="Message" required
-          oninvalid="this.setCustomValidity('proper message required');"
+          oninvalid="this.setCustomValidity('proper message required mimimum length 5 maximum length 120');"
           oninput="this.setCustomValidity('')"></textarea>
-        <button type="submit" class="send-btn" name="submit" value="Submit">Send Message</button>
+        <button class="send-btn" name="submit" onclick="formValidation()" id="contact-submit">Send Message</button>
       </form>
     </div>
   </div>
