@@ -77,17 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   fetch(`${bookURL}`)
     .then(response => response.json())
-    .then(bookData => bookData.forEach(function (book) {
-      bookContainer.innerHTML += `
-    <div id=${book.id}>
-      <h2>${book.username}</h2>
-      <h4>Email: ${book.cemail}</h4>
-      <h5>Subject: ${book.subject}</h4>
-      <p>${book.message}</p>
-    </div>`
-    }))
-  /*end of for get data*/
-
+   
   bookForm.addEventListener('submit', (e) => {
     e.preventDefault()
     /* additional functionality goes down here!!*/
@@ -109,14 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'Content-Type': 'application/json'
       }
     }).then(response => response.json())
-      .then(book => {
-        bookContainer.innerHTML += `
-            <div id=${book.id}>
-              <h2>${book.username}</h2>
-              <h4>Email: ${book.cemail}</h4>
-              <h4>Subject: ${book.subject}</h4>
-              <p>${book.message}</p>
-            </div>`
-      })
+  
   })
 })

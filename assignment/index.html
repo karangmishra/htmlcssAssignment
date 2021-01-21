@@ -405,7 +405,7 @@
     <div class="column-flex" id="create-book">
       <form name="registration"id="book-form" action="./html/thanks.html" method="POST">
         <input type="text" id="username" name="username" size="20" placeholder="Your Name" required
-          oninvalid="this.setCustomValidity('please type proper name')" oninput="this.setCustomValidity('')">
+          oninvalid="this.setCustomValidity('please type proper name')" onvalid="this.setCustomValidity('')">
         <input type="text" id="cemail" name="email" size="30" placeholder="Your Email" required
           oninvalid='this.setCustomValidity("proper email required");' oninput="this.setCustomValidity('')">
         <input type="text" id="subject" name="subject" size="50" placeholder="Subject" required
