@@ -531,7 +531,13 @@ form input {
   margin-bottom: 16px;
   resize: vertical;
   width: 45%; }
+form .error-message {
+  color: #ff0000;
+  font-size: 12px; }
 form #subject {
+  width: 100%; }
+form #contact-message {
+  height: 150px;
   width: 100%; }
 form #message {
   height: 150px;

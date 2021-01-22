@@ -709,9 +709,19 @@ form {
 	  margin-bottom: 16px;
 	  resize: vertical;
 	  width: 45%;
-  }
+	}
+	
+	.error-message {
+		color: #ff0000;
+		font-size: 12px;
+	}
 
   #subject {
+	  width: 100%;
+	}
+	
+	#contact-message {
+	  height: 150px;
 	  width: 100%;
   }
 
