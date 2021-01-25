@@ -21,7 +21,7 @@ function useridValidation(uid) {
   let message = document.getElementsByClassName("error-message");
   let uid_len = uid.value.length;
   let letters = /^[A-Za-z]+[ A-Za-z]*$/;
-  if (uid_len == !0 || uid_len >= 3 && uid_len < 20 && uid.value.match(letters)) {
+  if (uid_len >= 3 && uid_len < 20 && uid.value.match(letters)) {
     text = "";
     message[0].innerHTML = text;
     return true;
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(response => response.json())
 
   bookForm.addEventListener('submit', (e) => {
-    e.preventDefault()
+    e.preventDefault();
     /* additional functionality goes down here!!*/
     const usernameInput = bookForm.querySelector('#username').value;
     const emailInput = bookForm.querySelector('#email').value;
