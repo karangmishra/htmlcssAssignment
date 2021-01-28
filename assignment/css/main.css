@@ -676,6 +676,29 @@ form text {
   #top-btn:hover {
     background: #ff000f; }
 
+/*table of report*/
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%; }
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 10px; }
+
+tr:nth-child(even) {
+  background: #f2f2f2; }
+
+tr:hover {
+  background: #ddd; }
+
+th {
+  background: #868f86;
+  color: #fff;
+  padding-bottom: 12px;
+  padding-top: 12px; }
+
 @media only screen and (max-width: 1080px) {
   body {
     flex-wrap: wrap;

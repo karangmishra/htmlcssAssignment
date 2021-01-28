@@ -419,7 +419,7 @@
             oninvalid="this.setCustomValidity('proper message required mimimum length 5 maximum length 120');"
             onkeyup="this.setCustomValidity('')"></textarea>
           <p class="error-message"></p>
-          <button class="send-btn" name="submit" onclick="formValidation()" id="contact-submit">Send
+          <button class="send-btn" name="submit" onclick="formValidation(); saveFile();" id="contact-submit">Send
             Message</button>
         </form>
       </div>
