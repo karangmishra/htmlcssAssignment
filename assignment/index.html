@@ -413,13 +413,13 @@
           <p class="error-message"></p>
           <input type="text" id="subject" name="subject" size="50" placeholder="Subject" required
             oninvalid="this.setCustomValidity('proper subject required minimum length 5 ');"
-            onkeyup="this.setCustomValidity('')" />
+            onkeyup="this.setCustomValidity('')"/>
           <p class="error-message"></p>
           <textarea id="message" name="message" placeholder="Message" required
             oninvalid="this.setCustomValidity('proper message required mimimum length 5 maximum length 120');"
             onkeyup="this.setCustomValidity('')"></textarea>
           <p class="error-message"></p>
-          <button class="send-btn" name="submit" onclick="formValidation(); saveFile();" id="contact-submit">Send
+          <button class="send-btn" name="submit" onclick="formValidation();" id="contact-submit">Send
             Message</button>
         </form>
       </div>

@@ -101,6 +101,7 @@ section {
     font-size: 12px;
     padding-top: 5px; }
   .navbar .nav-header {
+    cursor: pointer;
     display: inline;
     padding-right: 20px;
     text-align: left; }
@@ -129,6 +130,7 @@ section {
 /* navbar dropdown */
 .dropdown-content {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   display: none;
   margin-left: 2%;
   min-width: 100px;
@@ -142,8 +144,11 @@ section {
     .dropdown-content a:hover {
       background: #f1f1f1; }
 
-.dropdown:hover .dropdown-content {
-  display: block; }
+.dropdown {
+  cursor: pointer; }
+  .dropdown:hover .dropdown-content {
+    cursor: pointer;
+    display: block; }
 
 .navbar.responsive {
   position: relative; }
@@ -164,6 +169,7 @@ section {
   border-radius: 4px;
   border-width: 2px;
   color: #2487ce;
+  cursor: pointer;
   padding: 12px 20px; }
 
 .action-call {
@@ -171,6 +177,7 @@ section {
   border: 2px solid #fff;
   border-radius: 4px;
   color: #fff;
+  cursor: pointer;
   padding: 12px 20px; }
 
 .primarybutton {
@@ -178,6 +185,7 @@ section {
   border: 0;
   border-radius: 2.5px;
   color: #fff;
+  cursor: pointer;
   display: inline;
   font-size: 16px;
   padding: 12px 20px;
@@ -187,6 +195,7 @@ section {
   background: #2487ce;
   border: 0;
   color: #fff;
+  cursor: pointer;
   margin-left: 40%;
   margin-top: 4%;
   padding: 12px 20px; }

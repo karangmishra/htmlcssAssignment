@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const bookURL = `http://localhost:3000/users`;
   const bookForm = document.querySelector('#book-form');
   let d = new Date();
+  d.toTimeString();
 
   fetch(`${bookURL}`)
     .then(response => response.json())
@@ -104,88 +105,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailInput = bookForm.querySelector('#email').value;
     const messageInput = bookForm.querySelector('#message').value;
     const subjectInput = bookForm.querySelector('#subject').value;
-/*
-    fetch(`${bookURL}`, {
-      method: 'POST',
-      body: JSON.stringify({
-        username: usernameInput,
-        email: emailInput,
-        subject: subjectInput,
-        message: messageInput,
-        date: d
-      }),
-
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then(response => response.json())
-*/
-var xhr = new XMLHttpRequest();
-xhr.open("POST",bookURL, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.send(JSON.stringify({
-  username: usernameInput,
-  email: emailInput,
-  subject: subjectInput,
-  message: messageInput,
-  date: d
- }));
-xhr.onload = function() {
-    var data = JSON.parse(this.responseText);
-    console.log(data);
-};
+    /*
+        fetch(`${bookURL}`, {
+          method: 'POST',
+          body: JSON.stringify({
+            username: usernameInput,
+            email: emailInput,
+            subject: subjectInput,
+            message: messageInput,
+            date: d
+          }),
+    
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }).then(response => response.json())
+    */
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", bookURL, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+      username: usernameInput,
+      email: emailInput,
+      subject: subjectInput,
+      message: messageInput,
+      date: d
+    }));
+    xhr.onload = function () {
+      var data = JSON.parse(this.responseText);
+      console.log(data);
+    };
   })
 })
-/*
-var xhr = new XMLHttpRequest();
-xhr.open("POST", url, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.send(JSON.stringify({
-  username: usernameInput,
-  email: emailInput,
-  subject: subjectInput,
-  message: messageInput,
-  date: d
- }));
-xhr.onload = function() {
-    var data = JSON.parse(this.responseText);
-    console.log(data);
-};
-*/
-
-/*
-    let saveFile = () => {
-      
-      const bookForm = document.querySelector('#book-form');
-        // Get the data from each element on the form.
-        const usernameInput = bookForm.querySelector('#username').value;
-        const emailInput = bookForm.querySelector('#email').value;
-        const messageInput = bookForm.querySelector('#message').value;
-        const subjectInput = bookForm.querySelector('#subject').value;
-        
-        // This variable stores all the data.
-        let data = 
-            '{"Name": "' + usernameInput + '",\n ' + 
-            '"Email": "' +emailInput + '",\n ' + 
-            '"Subject": "' + subjectInput + '",\n ' + 
-            '"Message": ' + messageInput  + '"\n }';
-        
-        // Convert the text to BLOB.
-        const textToBLOB =  new Blob([data], { type: 'Application/json' });
-        const sFileName = './formdata.json';	   // The file to save the data.
-
-        let newLink = document.createElement("a");
-        newLink.download = sFileName;
-        if (window.webkitURL != null) {
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-        }
-        else {
-            newLink.href = window.URL.createObjectURL(textToBLOB);
-            newLink.style.display = "none";
-            document.body.appendChild(newLink);
-        }
-
-        newLink.click(); 
-    }
-
-*/
