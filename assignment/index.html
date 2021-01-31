@@ -24,8 +24,12 @@
         <a href="#potfolio">Portfolio</a>
         <a href="#team">Team</a>
         <a href="#pricing">Pricing</a>
-        <a class="dropdown">Drop Down <i class="fa fa-caret-down"></i>
-          <span class="dropdown-content">Newsletter</span></a>
+        <div class="dropdown">
+          <a href="javascript:void(0);">Drop Down <i class="fa fa-caret-down"></i></a>
+          <span class="dropdown-content">
+            <a href="">Newsletter</a>
+          </span>
+        </div>
         <a href="#contact">Contact</a>
         <a class="button" id="get-btn">Get Strated</a>
         <a href="#"></a>
@@ -413,7 +417,7 @@
           <p class="error-message"></p>
           <input type="text" id="subject" name="subject" size="50" placeholder="Subject" required
             oninvalid="this.setCustomValidity('proper subject required minimum length 5 ');"
-            onkeyup="this.setCustomValidity('')"/>
+            onkeyup="this.setCustomValidity('')" />
           <p class="error-message"></p>
           <textarea id="message" name="message" placeholder="Message" required
             oninvalid="this.setCustomValidity('proper message required mimimum length 5 maximum length 120');"

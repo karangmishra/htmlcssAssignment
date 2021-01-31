@@ -186,7 +186,6 @@ section {
 	display: none;
 	margin-left: 2%;
 	min-width: 100px;
-	padding-top: .5%;
 	position: static;
 	z-index: 1;
 
@@ -203,6 +202,7 @@ section {
 
 .dropdown {
 	cursor: pointer;
+	display: inline-block;
 
 	&:hover {
 		.dropdown-content {

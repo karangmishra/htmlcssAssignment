@@ -134,7 +134,6 @@ section {
   display: none;
   margin-left: 2%;
   min-width: 100px;
-  padding-top: .5%;
   position: static;
   z-index: 1; }
   .dropdown-content a {
@@ -145,7 +144,8 @@ section {
       background: #f1f1f1; }
 
 .dropdown {
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block; }
   .dropdown:hover .dropdown-content {
     cursor: pointer;
     display: block; }
