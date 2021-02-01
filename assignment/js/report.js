@@ -8,78 +8,64 @@ fetch('../formdata.json', {
   res => {
     res.json().then(
       data => {
+        objJson = data.users;
         console.log(data.users);
-        if (data.users.length > 0) {
-          let temp = "";
-          for (var i = 0; i < data.users.length; i++) {
-            objJson = data.users[i].username;
-            console.log(JSON.stringify(objJson) + "objJson")
-          }
-          data.users.forEach((d) => {
-            temp += "<tr>";
-            temp += "<td>" + d.id + "</td>";
-            temp += "<td>" + d.username + "</td>";
-            temp += "<td>" + d.date + "</td>";
-            temp += "</tr>";
-          })
-          document.getElementById("report").innerHTML = temp;
-        }
+        console.log(data.users.length + "length");
+
       }
     )
   }
 )
 
-/* for pagination */
-var current_page = 1;
-var records_per_page = 2;
-
-/* Can be obtained from json file, such as your objJson variable*/
+var currentPage = 1;
+var recordsPerPage = 3;
+var objJson = [{ username: "", id: 1, date: "" }];
 function prevPage() {
-  if (current_page > 1) {
-    current_page--;
-    changePage(current_page);
+  if (currentPage > 1) {
+    currentPage--;
+    changePage(currentPage);
   }
 }
 
 function nextPage() {
-  if (current_page < numPages()) {
-    current_page++;
-    changePage(current_page);
+  if (currentPage < numPages()) {
+    currentPage++;
+    changePage(currentPage);
   }
 }
 
 function changePage(page) {
-  var btn_next = document.getElementById("btn-next");
-  var btn_prev = document.getElementById("btn-prev");
-  var listing_table = document.getElementById("listingTable");
-  var page_span = document.getElementById("page");
+  var btnNext = document.getElementById("btn-next");
+  var btnPrev = document.getElementById("btn-prev");
+  var listingTable = document.getElementById("report");
+  var pageSpan = document.getElementById("page");
 
   // Validate page
   if (page < 1) page = 1;
   if (page > numPages()) page = numPages();
 
-  listing_table.innerHTML = "";
+  listingTable.innerHTML = "";
 
-  for (var i = (page - 1) * records_per_page; i < (page * records_per_page); i++) {
-    listing_table.innerHTML += JSON.stringify(objJson) + "<br>";
+  for (var i = (page - 1) * recordsPerPage; i < (page * recordsPerPage); i++) {
+    listingTable.innerHTML += "<tr><td>" + objJson[i].id + "</td><td>" + objJson[i].username + "</td><td>" + objJson[i].date + "</td></tr>";
   }
-  page_span.innerHTML = page;
+  pageSpan.innerHTML = page;
 
   if (page == 1) {
-    btn_prev.style.visibility = "hidden";
+    btnPrev.style.visibility = "hidden";
   } else {
-    btn_prev.style.visibility = "visible";
+    btnPrev.style.visibility = "visible";
   }
 
   if (page == numPages()) {
-    btn_next.style.visibility = "hidden";
+    btnNext.style.visibility = "hidden";
   } else {
-    btn_next.style.visibility = "visible";
+    btnNext.style.visibility = "visible";
   }
 }
 
 function numPages() {
-  return Math.ceil(40 / records_per_page);
+  return Math.ceil(objJson.length / recordsPerPage);
 }
 
 window.onload = function () {
