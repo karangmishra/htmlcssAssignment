@@ -18,8 +18,13 @@ fetch('../formdata.json', {
 )
 
 var currentPage = 1;
-var recordsPerPage = 3;
-var objJson = [{ username: "", id: 1, date: "" }];
+var recordsPerPage = 5;
+var objJson = [
+  { username: "Arjun", id: 1, date: "2021-01-27T13:03:01.238Z" },
+  { username: "Ram", id: 2, date: "2021-01-27T13:03:01.238Z" },
+  { username: "Dev", id: 3, date: "2021-01-27T13:03:01.238Z" }
+];
+
 function prevPage() {
   if (currentPage > 1) {
     currentPage--;
