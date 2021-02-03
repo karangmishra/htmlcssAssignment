@@ -11,7 +11,6 @@ fetch('../formdata.json', {
         objJson = data.users;
         console.log(data.users);
         console.log(data.users.length + "length");
-
       }
     )
   }
