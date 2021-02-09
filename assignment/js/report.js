@@ -51,7 +51,7 @@ function changePage(page) {
   listingTable.innerHTML = "";
 
   for (var i = (page - 1) * recordsPerPage; i < (page * recordsPerPage); i++) {
-    listingTable.innerHTML += "<tr><td>" + objJson[i].id + "</td><td>" + objJson[i].username + "</td><td>" + objJson[i].date + "</td></tr>";
+    listingTable.innerHTML += "<tr><td>" + objJson[i].id + "</td><td>" + objJson[i].username + "</td><td>" + objJson[i].date.split('T')[0] + "</td></tr>";
   }
   pageSpan.innerHTML = page;
 

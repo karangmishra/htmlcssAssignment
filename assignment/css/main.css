@@ -689,7 +689,8 @@ form text {
 table {
   border-collapse: collapse;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2%; }
 
 td,
 th {
@@ -765,6 +766,9 @@ th {
   .contact-info {
     display: inline-block; } }
 @media only screen and (min-width: 480px) and (max-width: 720px) {
+  table {
+    width: 33%; }
+
   .footer-container {
     margin: auto; } }
 /* -----iPad view-----*/
