@@ -24,7 +24,7 @@ var showdata = function () {
           temp += "<tr>";
           temp += "<td>" + d.id + "</td>";
           temp += "<td>" + d.username + "</td>";
-          temp += "<td>" + 1 + "</td>";
+          temp += "<td>" + d.date + "</td>";
           temp += "</tr>";
           }
         })
