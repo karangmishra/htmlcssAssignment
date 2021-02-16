@@ -619,6 +619,8 @@ form text {
     color: rgba(2, 8, 99, 0.822);
     font-size: 18px;
     padding: 4px; }
+  .footer-items form {
+    padding-left: 6px; }
   .footer-items .subscribe {
     width: 60%; }
   .footer-items p {

@@ -1,28 +1,51 @@
-/*using fetch method, view data*/
-fetch('../formdata.json', {
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
+/*reading a file is an async operation.*/
+function readTextFile(file, callback) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function () {
+    if (rawFile.readyState === 4 && rawFile.status == "200") {
+      callback(rawFile.responseText);
+    }
   }
-}).then(
-  res => {
-    res.json().then(
-      data => {
+  rawFile.send(null);
+}
+
+var showdata = function () {
+  return new Promise(function (resolve, reject) {
+    readTextFile("../formdata.json", function (text) {
+      var data = JSON.parse(text);
+  
+      if (data.users.length > 0) {
         objJson = data.users;
-        console.log(data.users);
-        console.log(data.users.length + "length");
+        let temp = "";
+        data.users.forEach((d) => {
+          if(d.id < 6){
+          temp += "<tr>";
+          temp += "<td>" + d.id + "</td>";
+          temp += "<td>" + d.username + "</td>";
+          temp += "<td>" + 1 + "</td>";
+          temp += "</tr>";
+          }
+        })
+        document.getElementById("report").innerHTML = temp;
       }
-    )
-  }
-)
+      resolve('task1');
+    });
+  });
+};
+
+Promise.race([showdata()])
+  .then(function (fromResolve) {
+    console.log(fromResolve);
+  });
+
+window.onload = async () => {
+  changePage(1);
+};
 
 var currentPage = 1;
 var recordsPerPage = 5;
-var objJson = [
-  { username: "Arjun", id: 1, date: "2021-01-27T13:03:01.238Z" },
-  { username: "Ram", id: 2, date: "2021-01-27T13:03:01.238Z" },
-  { username: "Dev", id: 3, date: "2021-01-27T13:03:01.238Z" }
-];
 
 function prevPage() {
   if (currentPage > 1) {
@@ -72,6 +95,3 @@ function numPages() {
   return Math.ceil(objJson.length / recordsPerPage);
 }
 
-window.onload = function () {
-  changePage(1);
-};
